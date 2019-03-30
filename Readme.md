@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dima Ivlev](https://up.htmlacademy.ru/adaptive/16/user/238101).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Колесников](https://htmlacademy.ru/profile/m1roku).
 
 ---
 
