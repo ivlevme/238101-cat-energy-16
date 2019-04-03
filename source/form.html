@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="" class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
+      <a href="index.html" class="page-header__logo logotype">
+        <img class="page-header__logo-image logotype__image" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
       </a>
       <img class="page-header__logo-name" src="http://placehold.it/128x24" width="128" height="24" alt="Текст логотипа Cat Energy">
       <nav class="main-nav">
@@ -26,32 +26,47 @@
       </nav>
     </header>
     <main class="page-main">
-      <!-- Подбор программы и анкета -->
-      <form class="owner-contacts__form" action="https://echo.htmlacademy.ru" method="get">
-        <section class="owner-contacts">
-          <h2 class="owner-contacts__titile">Контактные данные (владельца кота)</h2>
-          <label class="owner-contacts__label" for="email">E-mail:*</label>
-          <input class="owner-contacts__input-email" id="email" type="email" name="email" value="" placeholder="kuklachev@gmail.com">
-          <label class="owner-contacts__label" for="phone">Телефон:*</label>
-          <input class="owner-contacts__input-phone" id="phone" type="text" name="phone" value="" placeholder="8 (960) 900-60-90">
-        </section>
-        <section class="note">
-          <h2 class="note__title">Комментарий</h2>
+      <h1 class="page-main__title">Подбор программы</h1>
+      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="fieldset-block">
+          <label class="form__label" for="cat-name">Имя:*</label>
+          <input class="form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+          <label class="form__label" for="cat-weight">Вес (кг):*</label>
+          <input class="form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7">
+          <label class="form__label" for="cat-age">Возраст (лет):</label>
+          <input class="form__input" id="cat-age" type="text" name="cat-age" placeholder="7">
+          <label class="form__label" for="lose-weight">Похудение</label>
+          <input class="form__input" id="lose-weight" type="radio" name="choice-program" value="lose-weight" checked>
+          <label class="form__label" for="gain-weight">Набор массы</label>
+          <input class="form__input" id="gain-weight" type="radio" name="choice-program" value="gain-weight">
+          <label class="form__label" for="advice-weight">Не знаю (Нужен ваш совет)</label>
+          <input class="form__input" id="advice-weight" type="radio" name="choice-program" value="advice-weight">
+        </fieldset>
+        <fieldset class="fieldset-block">
+          <legend class="fieldset-block__title">Контактные данные (владельца кота)</legend>
+          <label class="form__label" for="email">E-mail:*</label>
+          <input class="form__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+          <label class="form__label" for="phone">Телефон:*</label>
+          <input class="form__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        </fieldset>
+        <fieldset class="fieldset-block note">
+          <legend class="fieldset-block__title">Комментарий</legend>
           <textarea class="note__textarea" name="note-message" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </section>
-        <section class="additional">
-          <h2 class="additional__title">Дополнительно</h2>
-          <input class="additional__characteristic" id="sweetener" type="checkbox" name="sweetener" checked>
-          <label for="sweetener">Сахарозаменитель</label>
-          <input class="additional__characteristic" id="water" type="checkbox" name="water">
-          <label for="water">Питьевая вода</label>
-          <input class="additional__characteristic" id="milk" type="checkbox" name="milk">
-          <label for="milk">Молоко</label>
-          <input class="additional__characteristic" id="vitamins" type="checkbox" name="vitamins">
-          <label for="vitamins">Витамины</label>
-        </section>
-      <button class="owner-contacts__button button" type="submit">Отправить заявку</button>
-      <span class="owner-contacts__footnote">* — Обязательные поля</span>
+        </fieldset>
+        <fieldset class="fieldset-block">
+          <legend class="fieldset-block__title">Дополнительно</legend>
+          <input class="form__input" id="sweetener" type="checkbox" name="sweetener" checked>
+          <label class="form__label" for="sweetener">Сахарозаменитель</label>
+          <input class="form__input" id="water" type="checkbox" name="water">
+          <label class="form__label" for="water">Питьевая вода</label>
+          <input class="form__input" id="milk" type="checkbox" name="milk">
+          <label class="form__label" for="milk">Молоко</label>
+          <input class="form__input" id="vitamins" type="checkbox" name="vitamins">
+          <label class="form__label" for="vitamins">Витамины</label>
+        </fieldset>
+      <button class="form__button button" type="submit">Отправить заявку</button>
+      <span class="form__footnote">* — Обязательные поля</span>
       </form>
       <section class="cooperation">
         <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
@@ -61,7 +76,10 @@
       </section>
     </main>
     <footer class="page-footer">
-      <img class="page-footer__logo-name" src="http://placehold.it/128x24" width="128" height="24" alt="Текст логотипа Cat Energy">
+      <a href="index.html" class="page-footer__logo logotype">
+        <img class="page-footer__logo-name logotype__image" src="http://placehold.it/128x24" width="128" height="24" alt="Текст логотипа Cat
+          Energy">
+      </a>
       <ul class="page-footer__social social">
         <li class="social__item ">
           <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
