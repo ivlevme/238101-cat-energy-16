@@ -1,0 +1,46 @@
+.stats {
+  width: 280px;
+  border-collapse: collapse;
+}
+
+.stats tbody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats tr {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 124px;
+}
+
+.stats__value {
+  // font-family: "Oswald-Regular", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+  text-transform: uppercase;
+
+  border: solid 1px #cdcdcd;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+}
+
+.stats_field {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-align: center;
+
+  width: 88px;
+  margin: 0 auto;
+  margin-top: -10px;
+
+  background-color: #f2f2f2;
+}

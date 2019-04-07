@@ -1,0 +1,92 @@
+.program {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: 20px;
+
+  background-color: #F2F2F2;
+}
+
+.program__title {
+  // font-family: "Oswald-Regular", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  color: #111111;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  padding-left: 91px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+
+  position: relative;
+}
+
+.program__title::before {
+  content: "";
+
+  width: 50px;
+  height: 51px;
+  border-radius: 50%;
+
+  background-color: #68B738;
+
+  position: absolute;
+  top: -6px;
+  left: 22px;
+}
+
+.program__title::after {
+  content: "";
+
+  position: absolute;
+}
+
+.program__title-gain::after {
+  width: 67px;
+  height: 28px;
+
+  top: 6px;
+  left: 13px;
+
+  background-image: url("../../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.program__title-slim::after {
+  width: 35px;
+  height: 49px;
+
+  top: -8px;
+  left: 30px;
+
+  background-image: url("../../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.program__description {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  width: 236px;
+  margin: 0px;
+  margin-left: 21px;
+  padding: 0px;
+}
+
+.program__button {
+  // font-family: "Oswald-Regular", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+
+  display: block;
+  margin-top: 42px;
+  margin-left: 21px;
+  margin-bottom: 20px;
+  padding-right:40px;
+}

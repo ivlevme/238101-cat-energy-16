@@ -1,0 +1,35 @@
+.show-more {
+  text-align: center;
+  min-height: 210px;
+
+  padding-top: 1px;
+}
+
+.show-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  margin-top: 78px;
+  margin-bottom: 8px;
+}
+
+.show-more__description {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+
+  margin: 0;
+  padding: 0;
+}
+
+.show-more__button {
+  // font-size: 16px;
+  // line-height: 20px;
+  // color: #444444;
+  background-color: #F2F2F2;
+
+  margin-top: 21px;
+}

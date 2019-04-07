@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__organization {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.copyright__link {
+  display: block;
+  width: 42px;
+  height: auto;
+  margin-right: -8px;
+  margin-top: 4px;
+}
+
+.copyright__fill-svg {
+  fill: #666666;
+}

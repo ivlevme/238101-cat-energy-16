@@ -1,0 +1,35 @@
+.cooperation {
+  &--catalog {
+    padding-top: 15px;
+  }
+}
+
+.cooperation__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooperation__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+
+  width: 125px;
+}
+
+.cooperation__address {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  width: 139px;
+  margin-top: 12px;
+}
+
+.cooperation__map {
+  display: block;
+  margin-top: 10px;
+}

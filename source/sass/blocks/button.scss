@@ -1,0 +1,27 @@
+.button {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+  min-height: 40px;
+  width: 280px;
+
+  border: none;
+  background-color: #68B738;
+
+  &--catalog {
+    font-family: "Oswald-Regular", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    min-height: 40px;
+    width: 280px;
+
+    border: none;
+    background-color: #68B738;
+  }
+}
