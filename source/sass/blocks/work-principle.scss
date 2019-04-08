@@ -35,8 +35,8 @@
   position: relative;
 
   &--healthy::after {
-      top: -2px;
-      left: 0;
+    top: -2px;
+    left: 0;
 
     background-image: url("../../img/advantage-leaf@1x.png");
   }
@@ -56,8 +56,8 @@
   }
 
   &--time::after {
-      top: -2px;
-      left: 0;
+    top: -2px;
+    left: 0;
 
     background-image: url("../../img/advantage-clock@1x.png");
   }
@@ -73,7 +73,7 @@
   left: 0;
   top: -2px;
 
-  background-color: #68B738;
+  background-color: $button-color;
 }
 
 .work-principle__item::after {
