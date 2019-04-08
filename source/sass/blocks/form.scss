@@ -52,7 +52,7 @@
 }
 
 .form__input::placeholder {
-  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-family: $font-family--Oswald-Regular;
   font-size: 16px;
   line-height: 1.13;
   color: #444444;
@@ -100,7 +100,7 @@
 }
 
 .fieldset-block__textarea::placeholder {
-  font-family: "Oswald-Regular", Arial, sans-serif;
+  font-family: $font-family--Oswald-Regular;
   font-size: 16px;
   line-height: 1.13;
   color: #444444;
@@ -117,7 +117,7 @@
 }
 
 .form__footnote {
-  font-family: Arial, sans-serif;
+  font-family: $font-family--Arial;
   font-size: 14px;
   line-height: 1.15;
   color: #444444;
