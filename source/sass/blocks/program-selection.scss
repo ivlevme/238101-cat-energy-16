@@ -1,9 +1,6 @@
 .program-selection {
-  text-align: center;
-
-  width: 320px;
-  margin: 0 auto;
-  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
 
   &--background-wrapper {
     background-image: url('../../img/index-background-mobile@1x.jpg');
@@ -18,11 +15,12 @@
 .program-selection__description {
   // font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   color: #FFFFFF;
-  text-align: center;
+  // text-align: center;
   font-weight: 400;
 
+  margin: 0 auto;
   margin-top: 26px;
   display: block;
 }
@@ -30,14 +28,20 @@
 .program-selection__intro {
   // font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: #FFFFFF;
   text-transform: uppercase;
 
+  margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 28px;
 }
 
+.program-selection__food-image {
+  margin: 0 auto;
+}
+
 .program-selection__button {
-  margin-top: -2px;
+  margin: 0 auto;
+  margin-top: 3px;
 }

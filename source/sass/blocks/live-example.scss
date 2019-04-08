@@ -2,13 +2,13 @@
   background-color: #f2f2f2;
 
   padding-top: 16px;
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
 }
 
 .live-example__title {
   // font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 1.67;
   font-weight: 400;
   color: #111111;
 
@@ -19,7 +19,7 @@
 .live-example__description {
   font-family: Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   color: #444444;
 
   width: 270px;
@@ -33,7 +33,7 @@
 .live-example__price {
   // font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.43;
   color: #111111;
   text-transform: uppercase;
 
