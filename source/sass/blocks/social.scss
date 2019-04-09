@@ -1,0 +1,37 @@
+.social {
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 135px;
+}
+
+.social__item {
+  margin: 0;
+  padding: 0;
+  width: 18px;
+
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__link--vkontakte {
+  width: 24px;
+  height: auto;
+}
+
+.social__link--instagram {
+  width: 16px;
+  height: auto;
+}
+
+.social__link--facebook {
+  width: 9px;
+  height: auto;
+  padding-top: 1px;
+}

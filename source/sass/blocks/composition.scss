@@ -1,0 +1,24 @@
+.composition {
+  font-family: $font-family--Arial;
+  font-size: 12px;
+  line-height: 1.34;
+}
+
+.composition tr {
+  display: flex;
+  justify-content: space-between;
+
+  width: 140px;
+  margin-bottom: -2px;
+}
+
+.composition__field {
+  width: 38px;
+
+  margin-left: -3px;
+}
+
+.composition__value {
+  width: 42px;
+  text-align: right;
+}
