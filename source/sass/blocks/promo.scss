@@ -8,6 +8,22 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  position: relative;
+}
+
+.promo::before {
+  content: "";
+
+  width: 56px;
+  height: 61px;
+
+  position: absolute;
+  top: 65px;
+  left: 113px;
+
+  background-image: url("../../img/icon-gift.svg");
+  fill: #fff;
 }
 
 .promo__description {
