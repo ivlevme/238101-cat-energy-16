@@ -40,3 +40,32 @@
 
   background-color: #68b738;
 }
+
+@media (min-width: $tablet-width) {
+  .progress-bar {
+    width: 573px;
+    margin: 0 auto;
+  }
+
+  .progress-bar__button {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .progress-bar__indicator {
+    width: 423px;
+    height: 6px;
+    border: none;
+
+    background-color: #dcdcdc;
+  }
+
+  .progress-bar__indicator-complete {
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ffffff; //#ffffff
+  }
+}

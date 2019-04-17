@@ -1,6 +1,8 @@
 .comparison {
-  margin-top: 36px;
+  // margin-top: 36px;
   min-height: 326px;
+
+  // background-color: #f2f2f2;
 }
 
 .comparison__progress {
@@ -9,4 +11,19 @@
 
 .comparison__photo {
   margin-left: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .comparison {
+    min-height: 692px;
+  }
+  .comparison__photo {
+    // display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparison {
+    min-height: 594px;
+  }
 }

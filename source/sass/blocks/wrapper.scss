@@ -13,10 +13,31 @@
   &--background {
     background-color: #f2f2f2;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .wrapper {
+    width: $tablet-width;
+    padding-left: 30px;
+    padding-right: 30px;
 
-  // &--promo {
-  //   margin-top: 57px;
-  //   margin-bottom: 34px;
-  // }
+    &--without-padding {
+      width: $tablet-width;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    &--disabled-margin {
+      width: 1440px;
+      padding: 0;
+      margin: 0;
+      // margin-left: 50px;
+    }
+  }
 }

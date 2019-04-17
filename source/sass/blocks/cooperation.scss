@@ -7,6 +7,8 @@
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
+
+  padding-top: 14px; //мобилка каталог
 }
 
 .cooperation__title {
@@ -32,4 +34,95 @@
 .cooperation__map {
   display: block;
   margin-top: 10px;
+}
+
+.cooperation__address br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 1.25;
+
+    width: 220px;
+    padding-left: 41px;
+  }
+
+  .cooperation__address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+
+    width: 200px;
+    margin-top: 15px;
+    padding-right: 42px;
+  }
+
+  .cooperation__address br {
+    display: block;
+  }
+
+  .cooperation__wrapper {
+    padding-top: 33px; //32
+
+    &--form-padding {
+      padding-top: 50px;
+    }
+  }
+
+  // .cooperation img {
+  //   height: 387px;
+  // }
+
+  .cooperation__map {
+    height: 387px;
+    margin-top: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation {
+    width: 1440px;
+  }
+
+  .cooperation__map {
+    width: 1440px;
+    height: 400px;
+    margin-top: -296px;
+
+    &--form-margin {
+      margin-top: -281px;
+    }
+  }
+
+  .cooperation__wrapper {
+    width: 570px;
+    margin-top: 79px;
+    margin-left: 110px;
+    padding-top: 48px;
+
+    min-height: 201px;
+
+    position: relative;
+    z-index: 1;
+
+    background-color: #ffffff;
+
+    &--form-padding {
+      margin-top: 94px;
+    }
+  }
+
+  .cooperation__title {
+    width: 235px;
+    padding-left: 76px;
+  }
+
+  .cooperation__address {
+    text-align: left;
+
+    width: 244px;
+    padding-right: 70px;
+  }
 }
