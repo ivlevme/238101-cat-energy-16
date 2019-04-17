@@ -11,13 +11,13 @@
   justify-content: space-between;
 
   width: 140px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .composition__field {
   width: 38px;
 
-  margin-left: 0px;
+  margin-left: 0;
   padding: 0;
 }
 
@@ -56,6 +56,7 @@
   .composition {
     margin: 0 auto;
   }
+
   .composition tr {
     width: 186px;
   }
