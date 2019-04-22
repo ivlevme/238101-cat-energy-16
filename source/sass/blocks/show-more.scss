@@ -1,7 +1,8 @@
 .show-more {
   text-align: center;
-  min-height: 210px;
-
+  // min-height: 210px;
+  // margin: 0;
+  // padding: 0;
   padding-top: 1px;
 
   position: relative;
@@ -12,6 +13,7 @@
   line-height: 1.25;
   color: #111111;
   text-transform: uppercase;
+  font-weight: 400;
 
   margin-top: 78px;
   margin-bottom: 8px;
@@ -28,9 +30,6 @@
 }
 
 .show-more__button {
-  // font-size: 16px;
-  // line-height: 20px;
-  // color: #444444;
   background-color: #f2f2f2;
 
   margin-top: 21px;
@@ -47,4 +46,65 @@
   left: 124px;
 
   background-image: url("../../img/icon-plus.svg");
+}
+
+@media (min-width: $tablet-switch) {
+  .show-more {
+    width: 324px;
+    border: 1px solid #f2f2f2;
+
+    text-align: center;
+  }
+
+  .show-more::before {
+    width: 61px;
+    height: 61px;
+
+    top: 54px;
+    left: 131px;
+  }
+
+  .show-more__title {
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 162px;
+    margin-bottom: 24px;
+  }
+
+  .show-more__description {
+    font-size: 16px;
+
+    width: 185px;
+    margin: 0 auto;
+  }
+
+  .show-more__button {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 82px;
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .show-more {
+    width: 245px;
+  }
+
+  .show-more::before {
+    top: 54px;
+    left: 91px;
+  }
+
+  .show-more__title {
+    margin-top: 162px;
+  }
+
+  .show-more__button {
+    width: 169px;
+  }
 }

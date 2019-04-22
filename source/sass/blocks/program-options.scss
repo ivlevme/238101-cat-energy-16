@@ -1,3 +1,26 @@
 .program-options__item {
   margin-bottom: 21px;
 }
+
+@media (min-width: $tablet-switch) {
+  .program-options__item {
+    min-height: 372px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .program-options {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-options__item {
+    width: 570px;
+  }
+
+  .program-options__item:last-child {
+    min-height: 372px;
+    padding-bottom: 0;
+  }
+}

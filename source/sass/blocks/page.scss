@@ -1,7 +1,53 @@
 .page__footer {
-  margin-top: 15px;
+  // margin-top: 15px;
 
   &--catalog-margin {
+    background-color: #f2f2f2;
     margin-top: 35px;
+  }
+}
+
+.page__header {
+  margin-top: 11px;
+  margin-bottom: 14px;
+}
+
+@media (min-width: $tablet-switch) {
+  .page__header {
+    margin-top: 23px;
+  }
+
+  .page__footer {
+    &--catalog-margin {
+      margin-top: 31px;
+    }
+
+    &--form-margin {
+      background-color: #f2f2f2;
+      margin-top: 93px;
+    }
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .page__header {
+    min-height: 696px;
+    padding-top: 55px;
+    margin-top: 0;
+    margin-bottom: 46px;
+
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .page__footer {
+    &--catalog-margin {
+      margin-top: 88px;
+    }
+
+    &--form-margin {
+      margin-top: 102px;
+    }
   }
 }

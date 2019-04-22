@@ -7,6 +7,9 @@
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
+
+  padding-top: 14px; //мобилка каталог
+  padding-bottom: 10px;
 }
 
 .cooperation__title {
@@ -31,5 +34,97 @@
 
 .cooperation__map {
   display: block;
-  margin-top: 10px;
+  // margin-top: 10px;
+}
+
+.cooperation__address br {
+  display: none;
+}
+
+@media (min-width: $tablet-switch) {
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 1.25;
+
+    width: 220px;
+    padding-left: 41px;
+  }
+
+  .cooperation__address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+
+    width: 200px;
+    margin-top: 15px;
+    padding-right: 42px;
+  }
+
+  .cooperation__address br {
+    display: block;
+  }
+
+  .cooperation__wrapper {
+    padding-top: 48px; //32
+    padding-bottom: 42px;
+
+    &--form-padding {
+      padding-top: 50px;
+    }
+  }
+
+  // .cooperation img {
+  //   height: 387px;
+  // }
+
+  .cooperation__map {
+    height: 387px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .cooperation {
+    width: $desktop-width;
+    min-height: 400px;
+    padding-top: 1px;
+
+    position: relative;
+
+    background-image: url("../../img/bg-map-desktop@1x.png");
+  }
+
+  .cooperation__map {
+    display: none;
+  }
+
+  .cooperation__wrapper {
+    width: 570px;
+    margin-top: 94px;
+    margin-left: 110px;
+    padding-top: 48px;
+
+    min-height: 201px;
+
+    position: relative;
+    z-index: 1;
+
+    background-color: #ffffff;
+
+    &--form-padding {
+      margin-top: 94px;
+    }
+  }
+
+  .cooperation__title {
+    width: 235px;
+    padding-left: 76px;
+  }
+
+  .cooperation__address {
+    text-align: left;
+
+    width: 244px;
+    padding-right: 70px;
+  }
 }

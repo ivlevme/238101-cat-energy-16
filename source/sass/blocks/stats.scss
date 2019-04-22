@@ -44,3 +44,40 @@
 
   background-color: #f2f2f2;
 }
+
+@media (min-width: $tablet-switch) {
+  .stats {
+    width: 366px;
+  }
+
+  .stats tr {
+    width: 162px;
+  }
+
+  .stats__value {
+    font-size: 30px;
+    line-height: 1.24;
+
+    padding-bottom: 19px;
+  }
+
+  .stats__field {
+    font-size: 14px;
+
+    width: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: #ffffff;
+  }
+
+  .stats__field br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .stats__field {
+    background-color: #f2f2f2;
+  }
+}

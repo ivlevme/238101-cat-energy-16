@@ -1,0 +1,39 @@
+.food-price {
+  font-size: 14px;
+  line-height: 1.43;
+  text-transform: uppercase;
+  color: #111111;
+
+  border-collapse: collapse;
+}
+
+@media (min-width: $tablet-switch) {
+  .food-price {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .food-price tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .food-price td {
+    margin-bottom: 7px;
+  }
+
+  .food-price td:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .food-price {
+    width: 330px;
+  }
+
+  .food-price tr {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

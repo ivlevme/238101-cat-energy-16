@@ -35,3 +35,46 @@
   height: auto;
   padding-top: 1px;
 }
+
+@media (min-width: $tablet-switch) {
+  .social {
+    width: 130px;
+    margin-left: 153px;
+    padding-top: 11px;
+  }
+
+  .social__item {
+    width: 35px;
+  }
+
+  .social__link {
+    margin: 0 auto;
+  }
+
+  .social__link--vkontakte {
+    width: 30px;
+    padding-top: 5px;
+  }
+
+  .social__link--instagram {
+    width: 23px;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 2px;
+  }
+
+  .social__link--facebook {
+    width: 14px;
+    margin-right: 3px;
+    margin-left: auto;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-switch) {
+  .social {
+    width: 150px;
+    margin-left: auto;
+    padding-left: 21px;
+  }
+}

@@ -21,3 +21,10 @@
 .copyright__fill-svg {
   fill: #666666;
 }
+
+@media (min-width: $tablet-switch) {
+  .copyright {
+    width: 164px;
+    // justify-content: flex-start;
+  }
+}
