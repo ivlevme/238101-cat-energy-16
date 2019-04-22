@@ -1,11 +1,11 @@
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .page-catalog__header {
-    margin-top: 54px;
+    margin-top: 55px;
     margin-bottom: 80px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .page-catalog__wrapper-promo {
     display: flex;
     justify-content: space-between;

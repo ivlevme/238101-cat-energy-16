@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .main-nav {
     display: flex;
     width: 440px; //440
@@ -65,10 +65,10 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .main-nav {
     width: 478px;
-    margin-right: 110px;
+    // margin-right: 110px;
 
     &--no-margin {
       margin-right: 0;

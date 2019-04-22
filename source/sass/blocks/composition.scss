@@ -3,19 +3,25 @@
   font-size: 12px;
   line-height: 1.34;
 
-  border-collapse: collapse;
+  display: block;
+  // border-collapse: collapse;
+}
+
+.composition tbody {
+  display: block;
+  width: auto;
 }
 
 .composition tr {
   display: flex;
   justify-content: space-between;
 
-  width: 140px;
+  width: 100%;
   margin-bottom: 0;
 }
 
 .composition__field {
-  width: 38px;
+  // width: 38px;
 
   margin-left: 0;
   padding: 0;
@@ -24,14 +30,18 @@
 .composition__value {
   text-align: right;
 
-  width: 42px;
+  // width: 42px;
   padding: 0;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
+  .composition {
+    width: auto;
+    padding-left: 35px;
+    padding-right: 38px;
+  }
   .composition tr {
-    width: 255px;
-    margin-bottom: 14px;
+    margin-bottom: 17px;
   }
 
   .composition__field {
@@ -52,16 +62,16 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .composition {
     margin: 0 auto;
   }
 
   .composition tr {
-    width: 186px;
+    // width: 186px;
   }
 
   .composition__value {
-    margin-right: 14px;
+    // margin-right: 14px;
   }
 }

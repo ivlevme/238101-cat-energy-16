@@ -36,7 +36,7 @@
   padding-top: 1px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .social {
     width: 130px;
     margin-left: 153px;
@@ -71,7 +71,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .social {
     width: 150px;
     margin-left: auto;

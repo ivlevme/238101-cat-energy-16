@@ -5,19 +5,21 @@
 
 .additional-goods__item {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
   padding: 0;
 
   list-style: none;
 }
 
 .additional-goods__title {
+  font-weight: 400;
+
   margin-bottom: 47px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .additional-goods__item {
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 
   .additional-goods__item:last-child {
@@ -34,7 +36,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .additional-goods__title {
     margin-left: 0;
     margin-bottom: 80px;

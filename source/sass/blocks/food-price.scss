@@ -7,7 +7,7 @@
   border-collapse: collapse;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .food-price {
     font-size: 20px;
     line-height: 1;
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .food-price {
     width: 330px;
   }

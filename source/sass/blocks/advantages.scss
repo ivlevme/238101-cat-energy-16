@@ -29,28 +29,28 @@
 
   position: relative;
 
-  &:nth-child(1)::after {
+  &--leaf::after {
     top: -2px;
     left: 0;
 
     background-image: url("../../img/advantage-leaf@1x.png");
   }
 
-  &:nth-child(2)::after {
+  &--powder::after {
     top: -3px;
     left: 0;
 
     background-image: url("../../img/advantage-powder@1x.png");
   }
 
-  &:nth-child(3)::after {
+  &--dining::after {
     top: -2px;
     left: -1px;
 
     background-image: url("../../img/advantage-dining@1x.png");
   }
 
-  &:nth-child(4)::after {
+  &--clock::after {
     top: -2px;
     left: 0;
 
@@ -87,7 +87,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .advatages__title {
     font-size: 60px;
     line-height: 1;
@@ -111,34 +111,34 @@
     padding: 0;
     margin-bottom: 117px;
 
-    &:nth-child(1)::after {
+    &--leaf::after {
       top: 0;
 
       background-image: url("../../img/advantage-leaf@1x.png");
     }
 
-    &:nth-child(2)::after {
+    &--powder::after {
       top: 0;
 
       background-image: url("../../img/advantage-powder@1x.png");
     }
 
-    &:nth-child(3)::after {
+    &--dining::after {
       top: 0;
       left: 0;
 
       background-image: url("../../img/advantage-dining@1x.png");
     }
 
-    &:nth-child(4)::after {
+    &--clock::after {
       top: 0;
 
       background-image: url("../../img/advantage-clock@1x.png");
     }
   }
 
-  .advatages__item:nth-child(3),
-  .advatages__item:nth-child(4) {
+  .advatages__item:nth-last-child(1),
+  .advatages__item:nth-last-child(2) {
     margin-bottom: 0;
   }
 
@@ -169,8 +169,6 @@
     width: 122px;
     height: 235px;
 
-    // outline: 1px solid red;
-
     z-index: -1;
   }
 
@@ -186,34 +184,46 @@
     display: block;
   }
 
-  .advatages__item:nth-child(1) .advatages__description::after {
+  .advatages__item--leaf .advatages__description::after {
     content: "1";
 
-    right: 15px;
+    right: 14px;
   }
 
-  .advatages__item:nth-child(2) .advatages__description::after {
+  .advatages__item--powder .advatages__description::after {
     content: "2";
 
     right: 21px;
   }
 
-  .advatages__item:nth-child(3) .advatages__description::after {
+  .advatages__item--dining .advatages__description::after {
     content: "3";
   }
 
-  .advatages__item:nth-child(4) .advatages__description::after {
+  .advatages__item--clock .advatages__description::after {
     content: "4";
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .advatages__item {
-    width: 246px;
-    // min-height: 235px;
+    width: 245px;
   }
 
   .advatages__description {
+    width: auto;
     margin-bottom: 0;
+  }
+
+  .advatages__description::after {
+    right: 9px;
+  }
+
+  .advatages__item--leaf .advatages__description::after {
+    right: 5px;
+  }
+
+  .advatages__item--powder .advatages__description::after {
+    right: 12px;
   }
 }

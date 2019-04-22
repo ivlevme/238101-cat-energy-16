@@ -36,7 +36,7 @@
   margin-top: 186px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .promo {
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
   }
@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .promo {
     width: 245px;
     background-image: url("../../img/gift-photo-desktop@1x.jpg");

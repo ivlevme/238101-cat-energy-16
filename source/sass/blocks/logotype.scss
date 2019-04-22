@@ -1,3 +1,10 @@
 .logotype {
   display: block;
 }
+
+@media (min-width: $desktop-switch) {
+  .logotype__image {
+    width: 203px;
+    height: auto;
+  }
+}

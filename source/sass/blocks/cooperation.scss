@@ -9,6 +9,7 @@
   justify-content: space-between;
 
   padding-top: 14px; //мобилка каталог
+  padding-bottom: 10px;
 }
 
 .cooperation__title {
@@ -33,14 +34,14 @@
 
 .cooperation__map {
   display: block;
-  margin-top: 10px;
+  // margin-top: 10px;
 }
 
 .cooperation__address br {
   display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .cooperation__title {
     font-size: 20px;
     line-height: 1.25;
@@ -64,7 +65,8 @@
   }
 
   .cooperation__wrapper {
-    padding-top: 33px; //32
+    padding-top: 48px; //32
+    padding-bottom: 42px;
 
     &--form-padding {
       padding-top: 50px;
@@ -77,28 +79,28 @@
 
   .cooperation__map {
     height: 387px;
-    margin-top: 42px;
+    margin-top: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .cooperation {
-    width: 1440px;
+    width: $desktop-width;
+    min-height: 400px;
+    padding-top: 1px;
+
+    position: relative;
+
+    background-image: url("../../img/bg-map-desktop@1x.png");
   }
 
   .cooperation__map {
-    width: 1440px;
-    height: 400px;
-    margin-top: -296px;
-
-    &--form-margin {
-      margin-top: -281px;
-    }
+    display: none;
   }
 
   .cooperation__wrapper {
     width: 570px;
-    margin-top: 79px;
+    margin-top: 94px;
     margin-left: 110px;
     padding-top: 48px;
 

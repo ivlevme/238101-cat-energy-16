@@ -1,26 +1,26 @@
 .comparison {
   // margin-top: 36px;
-  min-height: 326px;
+  min-height: 328px;
 
   // background-color: #f2f2f2;
 }
 
 .comparison__progress {
-  margin-top: 33px;
+  margin-top: 30px;
 }
 
 .comparison__photo {
-  margin-left: 5px;
+  // margin-left: -16px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .comparison {
-    min-height: 692px;
+    min-height: 661px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .comparison {
-    min-height: 594px;
+    min-height: auto;
   }
 }

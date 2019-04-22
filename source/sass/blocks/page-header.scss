@@ -4,7 +4,7 @@
   position: relative;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .page-header {
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .page-header {
     margin: auto;
     // padding: inherit;

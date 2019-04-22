@@ -36,14 +36,14 @@
 }
 
 .page-main__products {
-  margin-bottom: 25px;
+  margin-bottom: 51px;
 }
 
 .page-main__promo {
   margin-top: 57px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .page-main__program-selection {
     text-align: left;
     width: $tablet-width;
@@ -74,12 +74,18 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
+  .page-main {
+    margin-top: -600px;
+
+    &--form {
+      margin-top: 0;
+    }
+  }
   .page-main__program-selection {
     width: 1200px;
     margin: 0 auto;
-    margin-bottom: 34px;
-    margin-top: -600px;
+    // margin-bottom: 34px;
   }
 
   .page-main__program-options {

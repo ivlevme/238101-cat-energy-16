@@ -1,13 +1,11 @@
 .show-more {
   text-align: center;
-  min-height: 210px;
-  margin: 0;
-  padding: 0;
+  // min-height: 210px;
+  // margin: 0;
+  // padding: 0;
   padding-top: 1px;
 
   position: relative;
-
-  list-style: none;
 }
 
 .show-more__title {
@@ -15,6 +13,7 @@
   line-height: 1.25;
   color: #111111;
   text-transform: uppercase;
+  font-weight: 400;
 
   margin-top: 78px;
   margin-bottom: 8px;
@@ -49,7 +48,7 @@
   background-image: url("../../img/icon-plus.svg");
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-switch) {
   .show-more {
     width: 324px;
     border: 1px solid #f2f2f2;
@@ -91,7 +90,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $desktop-switch) {
   .show-more {
     width: 245px;
   }

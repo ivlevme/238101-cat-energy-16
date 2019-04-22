@@ -9,10 +9,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
-    <div class="wrapper page__header page__header--background-wrapper">
+    <div class="wrapper page__header">
       <header class="page-header">
         <a class="page-header__logo logotype">
-          <img class="page-header__logo-image logotype__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Cat Energy">
         </a>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -33,10 +33,11 @@
     <main class="page-main">
       <h1 class="visually-hidden">Cat Energy - Функциональное питание для котов</h1>
       <section class="program-selection program-selection--background-wrapper page-main__program-selection">
-        <b class="program-selection__description">Функциональное питание для котов</b>
-        <p class="program-selection__intro">Занялся собой? Займись котом!</p>
+        <b class="program-selection__description program-selection__wrapper">Функциональное питание для котов</b>
+        <p class="program-selection__intro program-selection__wrapper">Занялся собой? Займись котом!</p>
         <img class="program-selection__food-image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Фото еды Cat Energy">
-        <button class="program-selection__button button button--main" type="button">Подобрать программу</button>
+        <button class="program-selection__wrapper program-selection__button button button--main" type="button">Подобрать программу
+        </button>
       </section>
       <section class="program-options wrapper page-main__program-options">
         <h2 class="visually-hidden">Все программы Cat Energy</h2>
@@ -56,22 +57,22 @@
       <section class="advatages wrapper page-main__advatages">
         <h2 class="advatages__title">Как это работает</h2>
         <ul class="advatages__list">
-          <li class="advatages__item">
+          <li class="advatages__item advatages__item--leaf">
             <p class="advatages__description">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
-          <li class="advatages__item">
+          <li class="advatages__item advatages__item--powder">
             <p class="advatages__description">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="advatages__item">
+          <li class="advatages__item advatages__item--dining">
             <p class="advatages__description">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
-          <li class="advatages__item">
+          <li class="advatages__item advatages__item--clock">
             <p class="advatages__description">
               Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!
             </p>
@@ -81,33 +82,39 @@
       <section class="live-example">
         <h2 class="live-example__title wrapper">Живой пример</h2>
         <div class="live-example__wrapper-background">
-          <div class="wrapper">
-            <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <table class="live-example__statistics stats">
-              <tr>
-                <td class="stats__value">5 кг</td>
-                <td class="stats__field">снижение <br> веса</td>
-              </tr>
-              <tr>
-                <td class="stats__value">60 дней</td>
-                <td class="stats__field">затрачено <br> времени</td>
-              </tr>
-            </table>
-            <table class="live-example__price food-price">
-              <tr>
-                <td>Затраты на питание:</td>
-                <td>15 000 руб.</td>
-              </tr>
-            </table>
-          </div>
-          <div class="comparison live-example__comparison wrapper--without-padding">
-            <img class="comparison__photo" src="img/before-mobile@1x.png" width="311" height="232" alt="Пример кота">
-            <div class="comparison__progress progress-bar">
-              <button class="progress-bar__been progress-bar__button" type="button">Было</button>
-              <div class="progress-bar__indicator">
-                <div class="progress-bar__indicator-complete"></div>
+          <div class="live-example__wrapper">
+            <div class="wrapper live-example__left-column wrapper">
+              <p class="live-example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+              <div class="live-example__table-wrapper">
+                <table class="live-example__statistics stats">
+                  <tr>
+                    <td class="stats__value">5 кг</td>
+                    <td class="stats__field">снижение <br> веса</td>
+                  </tr>
+                  <tr>
+                    <td class="stats__value">60 дней</td>
+                    <td class="stats__field">затрачено <br> времени</td>
+                  </tr>
+                </table>
+                <table class="live-example__price food-price">
+                  <tr>
+                    <td>Затраты на питание:</td>
+                    <td>15 000 руб.</td>
+                  </tr>
+                </table>
               </div>
-              <button class="progress-bar__become progress-bar__button" type="button">Стало</button>
+            </div>
+            <div class="comparison live-example__comparison wrapper--without-padding">
+              <img class="comparison__photo" src="img/before-mobile@1x.png" width="320" height="240" alt="Пример кота">
+              <div class="comparison__progress progress-bar">
+                <button class="progress-bar__been progress-bar__button" type="button">Было</button>
+                <div class="progress-bar__indicator">
+                  <div class="progress-bar__indicator-complete"></div>
+                </div>
+                <button class="progress-bar__become progress-bar__button" type="button">Стало</button>
+              </div>
             </div>
           </div>
         </div>
@@ -125,7 +132,7 @@
         </section>
         <div class="wrapper wrapper--background page-footer__wrapper">
           <a class="page-footer__logo logotype">
-            <img class="page-footer__logo-name logotype__image" src="img/logo-footer.svg" width="128" height="24" alt="Текст логотипа Cat
+            <img class="page-footer__logo-name" src="img/logo-footer.svg" width="128" height="24" alt="Текст логотипа Cat
               Energy">
           </a>
           <ul class="page-footer__social social">
