@@ -1,5 +1,7 @@
-.active {
-  border-bottom: 2px solid $button-color;
+@media (min-width: $tablet-switch) {
+  .active {
+    border-bottom: 2px solid $button-color;
+  }
 }
 
 @media (min-width: $desktop-switch) {

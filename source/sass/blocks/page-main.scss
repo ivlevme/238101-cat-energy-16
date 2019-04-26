@@ -28,7 +28,7 @@
 }
 
 .page-main__program-options {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 
 .page-main__advatages {
@@ -56,7 +56,10 @@
   }
 
   .page-main__advatages {
-    margin-bottom: 86px;
+    padding-bottom: 86px;
+    margin-bottom: 0;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .page-main__title {
@@ -95,6 +98,8 @@
 
   .page-main__advatages {
     margin-bottom: 8px;
+    padding-bottom: 0;
+    border: none;
   }
 
   .page-main__products {

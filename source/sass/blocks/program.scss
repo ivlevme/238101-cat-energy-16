@@ -1,6 +1,6 @@
 .program {
   padding-top: 1px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
 
   background-color: #f2f2f2;
 }
@@ -10,7 +10,6 @@
 }
 
 .program__title {
-  // font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.55;
   color: #111111;
@@ -18,7 +17,7 @@
   text-transform: uppercase;
 
   padding-left: 91px;
-  margin-top: 29px;
+  margin-top: 30px;
   margin-bottom: 29px;
 
   position: relative;
@@ -48,7 +47,7 @@
   width: 67px;
   height: 28px;
 
-  top: 6px;
+  top: 4px;
   left: 13px;
 
   background-image: url("../../img/icon-cat-pro.svg");
@@ -76,22 +75,60 @@
 
   width: 236px;
   margin: 0;
-  margin-left: 21px;
+  margin-left: 20px;
   padding: 0;
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .program__button {
-  // font-family: "Oswald-Regular", Arial, sans-serif;
   font-size: 16px;
   line-height: 1;
   color: #111111;
   text-transform: uppercase;
 
   display: block;
-  margin-top: 42px;
-  margin-left: 21px;
-  // margin-bottom: 20px;
+  margin-top: 19px;
+  margin-left: 20px;
   padding-right: 40px;
+
+  position: relative;
+
+  &:hover::before {
+    width: 34px;
+    top: 3px;
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.program__button::before {
+  content: "";
+
+  width: 25px;
+  height: 12px;
+
+  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: 3px;
+  left: 97px;
+}
+
+// .program__button:hover::before {
+//   width: 34px;
+//   top: 3px;
+//   background-image: url("../../img/icon-right-arrow-verylong.svg");
+// }
+
+
+.program__button--catalog-pro::before {
+  left: 95px;
 }
 
 @media (min-width: $tablet-switch) {
@@ -139,6 +176,8 @@
     width: 380px;
     margin-left: 53px;
 
+    border: none;
+
     &--less-margin {
       width: 340px;
     }
@@ -148,8 +187,21 @@
     font-size: 20px;
     line-height: 1;
 
-    margin-top: 56px;
+    margin-top: 34px;
     margin-left: 53px;
+  }
+
+  .program__button::before {
+    top: 5px;
+    left: 131px;
+  }
+
+  .program__button:hover::before {
+    top: 4px;
+  }
+
+  .program__button--catalog-pro::before {
+    left: 124px;
   }
 }
 
@@ -188,7 +240,11 @@
   }
 
   .program__button {
-    margin-top: 31px;
+    margin-top: 10px;
+  }
+
+  .program__button:hover::before {
+    top: 5px;
   }
 
   .program:last-child {

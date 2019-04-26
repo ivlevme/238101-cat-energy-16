@@ -66,6 +66,17 @@
     margin: 0 auto;
 
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #ffffff; //#ffffff
+    box-shadow: 0 0 0 10px #ffffff;
+
+    &:hover {
+      box-shadow: 0 0 0 10px #ffffff,
+      0 5px 15px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 10px #ffffff,
+      0 0 0 11px #68b738,
+      0 4px 6px 13px rgba(0, 0, 0, 0.3);
+    }
   }
 }
