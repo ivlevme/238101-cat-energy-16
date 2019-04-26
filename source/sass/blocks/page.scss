@@ -1,3 +1,8 @@
+.page__header {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .page__footer {
   // margin-top: 15px;
 
@@ -15,6 +20,8 @@
 @media (min-width: $tablet-switch) {
   .page__header {
     margin-top: 23px;
+    padding-left: 29px;
+    padding-right: 31px;
   }
 
   .page__footer {
@@ -33,6 +40,8 @@
   .page__header {
     min-height: 696px;
     padding-top: 55px;
+    padding-right: 110px;
+    padding-left: 109px;
     margin-top: 0;
     margin-bottom: 46px;
 

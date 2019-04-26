@@ -18,4 +18,12 @@
     letter-spacing: 0;
     color: #444444;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

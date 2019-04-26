@@ -5,7 +5,7 @@
 .main-nav__toggle {
   position: absolute;
   top: -30px;
-  right: 0;
+  right: 19px;
   z-index: 1;
 
   width: 25px;
@@ -53,7 +53,7 @@
 @media (min-width: $tablet-switch) {
   .main-nav {
     display: flex;
-    width: 440px; //440
+    width: 439px; //440
     // padding-right: 30px;
 
     margin-top: -3px;
