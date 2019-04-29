@@ -46,7 +46,7 @@
   // padding-right: 0;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .live-example {
     padding-top: 1px;
 
@@ -89,7 +89,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .live-example__title {
     margin-top: 0;
     margin-bottom: 76px;

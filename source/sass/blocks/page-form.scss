@@ -1,31 +1,37 @@
 .page-form__header {
   margin-top: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: $tablet-switch) {
+.page-form__title {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.page-main__description {
+  margin-top: 0;
+  margin-bottom: 39px;
+  // width: 320px;
+}
+
+@media (min-width: $tablet-width) {
   .page-form__header {
     margin-top: 23px;
-  }
-
-  .page-form__title {
-    margin-top: 64px;
+    border-bottom: none;
   }
 
   .page-form__description {
     font-size: 20px;
     line-height: 1.5;
-
-    width: 340px;
-    margin-top: 56px;
-    margin-left: 41px;
-    margin-bottom: 66px;
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .page-form__header {
     margin-top: 54px;
-    margin-bottom: 80px;
+    margin-bottom: 68px;
   }
 
   .page-form__description {

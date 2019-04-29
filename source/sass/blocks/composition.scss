@@ -34,15 +34,22 @@
   padding: 0;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .composition {
     width: auto;
     padding-left: 35px;
-    padding-right: 38px;
+    padding-right: 40px;
   }
 
   .composition tr {
-    margin-bottom: 17px;
+    margin-bottom: 8px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-left: 3px;
+  }
+
+  .composition tr:last-child {
+    margin-bottom: 0;
   }
 
   .composition__field {
@@ -51,7 +58,6 @@
     color: #444444;
 
     width: auto;
-    margin-left: 3px;
   }
 
   .composition__value {
@@ -63,7 +69,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .composition {
     margin: 0 auto;
   }

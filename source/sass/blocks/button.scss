@@ -6,18 +6,13 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 
+  display: block;
   min-height: 40px;
   width: 280px;
 
   border: none;
   background-color: $button-color;
 
-  &--catalog {
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0;
-    color: #444444;
-  }
 
   &:hover {
     background-color: #5eaa2f;
@@ -25,5 +20,28 @@
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--catalog {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    color: #444444;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      color: rgba(68, 68, 68, 0.3);
+      // opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 16px;
+    letter-spacing: 0;
   }
 }

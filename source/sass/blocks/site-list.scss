@@ -50,7 +50,7 @@
   }
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
     justify-content: space-between;
@@ -81,7 +81,7 @@
 }
 
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .site-list__item-link {
     font-size: 20px;
     line-height: 1.25;

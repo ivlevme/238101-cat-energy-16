@@ -3,11 +3,32 @@
 
   border: none;
 
-  margin: 0;
-  margin-bottom: 29px;
-  padding: 0;
+  margin-bottom: 28px;
+  padding-top: 0;
+  padding-bottom: 0;
+  // padding-left: 0;
+  // padding-right: 0;
+  // margin-left: 0;
+
+  position: relative;
 
   &--cat-own {
+    margin-bottom: 28px;
+  }
+
+  &--no-margin {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset-block__left-column {
+  margin-bottom: 9px;
+
+  &--cat-own {
+    margin-bottom: 0;
+  }
+
+  &--cat-own:first-child {
     margin-bottom: 14px;
   }
 }
@@ -19,16 +40,33 @@
 
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-left: -20px;
+  padding-left: 19px;
+  padding-right: 14px;
+  margin-bottom: 34px;
+
+  background-color: #ffffff;
 
   &--addtional {
-    margin-bottom: 39px;
+    margin-bottom: 32px;
+    padding-right: 24px;
+  }
+
+  &--note {
+    padding-right: 22px;
+    margin-bottom: 35px;
   }
 }
 
 .fieldset-block__textarea {
   width: 280px;
   height: 150px;
+
+  resize:none;
+
+  padding-top: 12px;
+  padding-left: 14px;
+  border: 1px solid rgba(205,205,205, 0.5);
 }
 
 .fieldset-block__textarea::placeholder {
@@ -37,22 +75,27 @@
   line-height: 1.13;
   color: #444444;
   text-transform: uppercase;
-
-  padding-top: 10px;
-  padding-left: 11px;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .fieldset-block {
-    margin-bottom: 110px;
+    margin-bottom: 75px;
 
     &--cat-own {
-      margin-bottom: 49px;
+      margin-bottom: 65px;
     }
 
     &--note {
       margin-bottom: 65px;
     }
+  }
+
+  .fieldset-block__left-column {
+    margin-bottom: 58px;
+  }
+
+  .fieldset-block__left-column--cat-own:first-child {
+    margin-bottom: 19px;
   }
 
   .fieldset-block__title {
@@ -62,22 +105,38 @@
     margin-left: -2px;
     margin-bottom: 77px;
 
+    padding-left: 40px;
+
     &--addtional {
-      margin-bottom: 67px;
+      margin-bottom: 57px;
     }
   }
 
+  .fieldset-block__title br {
+    display: none;
+  }
+
   .fieldset-block__textarea {
+    font-size: 20px;
+    line-height: 1.5;
+
     width: 629px;
     height: 173px;
+    padding-top: 8px;
+    padding-left: 17px;
+  }
+
+  .fieldset-block__textarea::placeholder {
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   .fieldset-block__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    width: 564px;
+    width: 602px;
+    padding-left: 37px;
   }
 
   .fieldset-block--no-margin {
@@ -85,7 +144,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .fieldset-block__columns {
     display: flex;
     justify-content: space-between;

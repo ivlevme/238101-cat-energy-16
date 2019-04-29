@@ -4,8 +4,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -30px;
-  right: 19px;
+  top: -29px;
+  right: 0;
   z-index: 1;
 
   width: 25px;
@@ -15,6 +15,10 @@
 
   cursor: pointer;
   border: none;
+
+  &--catalog {
+    right: 0;
+  }
 }
 
 .main-nav__toggle::before {
@@ -50,7 +54,7 @@
   }
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
     width: 439px; //440
@@ -65,7 +69,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .main-nav {
     width: 478px;
     // margin-right: 110px;

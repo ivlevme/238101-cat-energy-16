@@ -45,7 +45,7 @@
   background-color: #f2f2f2;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .stats {
     width: 366px;
   }
@@ -76,7 +76,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .stats__field {
     background-color: #f2f2f2;
   }

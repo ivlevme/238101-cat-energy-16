@@ -3,6 +3,18 @@
 }
 
 .catalog__title {
-  margin-top: 30px;
-  margin-bottom: 165px; //165px
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    margin-bottom: 165px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+  }
 }

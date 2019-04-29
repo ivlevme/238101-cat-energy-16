@@ -1,14 +1,16 @@
 .page-header {
-  margin: 0;
-
   position: relative;
 }
 
 .page-header__logo-image {
-  margin-left: 20px;
+  // margin-left: 20px;
+
+  &--no-margin {
+    margin-left: 0;
+  }
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .page-header {
     display: flex;
     justify-content: space-between;
@@ -23,9 +25,17 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
-  .page-header {
-    margin: auto;
-    // padding: inherit;
+@media (min-width: $desktop-width) {
+  .page__header--index {
+    align-items: flex-start;
+
+    min-height: 696px;
+    padding-top: 55px;
+    padding-right: 110px;
+    padding-left: 109px;
+
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
   }
 }

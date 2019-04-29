@@ -22,7 +22,7 @@
   fill: #666666;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .copyright {
     width: 164px;
     // justify-content: flex-start;

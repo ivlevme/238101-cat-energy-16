@@ -2,14 +2,14 @@
   margin-bottom: 20px;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .program-options__item {
     min-height: 372px;
     margin-bottom: 30px;
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .program-options {
     display: flex;
     justify-content: space-between;

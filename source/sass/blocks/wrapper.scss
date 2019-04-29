@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .wrapper {
     width: $tablet-width;
     padding-left: 30px;
@@ -24,10 +24,22 @@
     &--without-padding {
       width: $tablet-width;
     }
+
+    &--form {
+      width: $tablet-width;
+      padding-left: 70px;
+      padding-right: 67px;
+    }
+
+    &--form-inner {
+      width: 630px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .wrapper {
     width: $desktop-width;
     padding-left: 110px;
@@ -38,6 +50,15 @@
       padding: 0;
       margin: 0;
       // margin-left: 50px;
+    }
+
+    &--without-padding {
+      width: $desktop-width;
+    }
+
+    &--catalog {
+      padding-left: 110px;
+      padding-right: 110px;
     }
   }
 }

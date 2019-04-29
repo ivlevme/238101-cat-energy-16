@@ -13,13 +13,13 @@
   // margin-left: -16px;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .comparison {
     min-height: 661px;
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .comparison {
     min-height: auto;
   }

@@ -44,16 +44,19 @@
   position: absolute;
   top: 25px;
   left: 124px;
+  opacity: 0.2;
 
   background-image: url("../../img/icon-plus.svg");
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .show-more {
     width: 324px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid rgba(205, 205, 205, 0.5);
 
     text-align: center;
+
+    background-color: transparent;
   }
 
   .show-more::before {
@@ -73,11 +76,12 @@
     width: 150px;
     margin: 0 auto;
     margin-top: 162px;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
 
   .show-more__description {
     font-size: 16px;
+    line-height: normal;
 
     width: 185px;
     margin: 0 auto;
@@ -86,11 +90,11 @@
   .show-more__button {
     width: 250px;
     margin: 0 auto;
-    margin-top: 82px;
+    margin-top: 85px;
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .show-more {
     width: 245px;
   }

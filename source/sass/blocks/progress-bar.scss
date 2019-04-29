@@ -41,7 +41,7 @@
   background-color: #68b738;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .progress-bar {
     width: 573px;
     margin: 0 auto;
@@ -50,6 +50,17 @@
   .progress-bar__button {
     font-size: 20px;
     line-height: 1;
+
+    padding-bottom: 5px;
+    border-bottom: 1px dotted rgba(17, 17, 17, 0.23);
+
+    &:hover {
+      border-bottom: 1px solid rgba(17, 17, 17, 0.23);
+    }
+
+    &:focus {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   .progress-bar__indicator {

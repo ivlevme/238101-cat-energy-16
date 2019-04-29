@@ -42,7 +42,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .cooperation__title {
     font-size: 20px;
     line-height: 1.25;
@@ -74,17 +74,13 @@
     }
   }
 
-  // .cooperation img {
-  //   height: 387px;
-  // }
-
   .cooperation__map {
     height: 387px;
     margin-top: 0;
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .cooperation {
     width: $desktop-width;
     min-height: 400px;

@@ -131,7 +131,7 @@
   left: 95px;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .program__title {
     font-size: 36px;
     line-height: 1.03;
@@ -205,7 +205,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .program__title {
     margin-left: 214px;
     margin-bottom: 74px;

@@ -44,7 +44,7 @@
   letter-spacing: 0;
 }
 
-@media (min-width: $tablet-switch) {
+@media (min-width: $tablet-width) {
   .program-selection {
     &--background-wrapper {
       background-image: none;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (min-width: $desktop-switch) {
+@media (min-width: $desktop-width) {
   .program-selection {
     position: relative;
     min-height: 600px;
