@@ -22,7 +22,10 @@
 }
 
 .progress-bar__indicator {
-  width: 84px;
+  width: 100%;
+  margin-left: 18px;
+  margin-right: 18px;
+
   height: 14px;
   margin-top: 3px;
   border: solid 1px #cdcdcd;
@@ -43,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .progress-bar {
-    width: 573px;
+    width: 571px;
     margin: 0 auto;
   }
 
@@ -64,9 +67,11 @@
   }
 
   .progress-bar__indicator {
-    width: 423px;
     height: 6px;
     border: none;
+    margin-top: 7px;
+    margin-left: 23px;
+    margin-right: 23px;
 
     background-color: #dcdcdc;
   }
@@ -75,9 +80,14 @@
     width: 8px;
     height: 8px;
     margin: 0 auto;
+    margin-left: 213px;
+    margin-right: auto;
+    margin-top: -1px;
 
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #ffffff;
+    box-shadow: 0 0 0 12px #ffffff,
+    0 0 0 13px #cdcdcd,
+    0 5px 9px 10px rgba(0, 0, 0, 0.3);
 
     &:hover {
       box-shadow: 0 0 0 10px #ffffff,

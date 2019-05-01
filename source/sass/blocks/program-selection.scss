@@ -9,6 +9,12 @@
     background-position: top;
 
     padding-top: 1px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 }
 
@@ -30,7 +36,7 @@
   text-transform: uppercase;
 
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 26px;
   margin-bottom: 28px;
 }
 
@@ -40,7 +46,7 @@
 
 .program-selection__button {
   margin: 0 auto;
-  margin-top: 4px;
+  margin-top: 1px;
   letter-spacing: 0;
 }
 
@@ -71,14 +77,16 @@
     margin-bottom: 48px;
   }
 
-  .program-selection__food-image {
+  .program-selection__picture {
     order: 1;
+  }
 
+  .program-selection__food-image {
     width: 709px;
     height: 609px;
 
-    margin-top: -80px;
-    // margin-right: -24px;
+    margin-top: -81px;
+    margin-left: 29px;
   }
 
   .program-selection__button {
@@ -127,7 +135,7 @@
 
   .program-selection__food-image {
     position: absolute;
-    top: 126px;
+    top: 79px;
     right: 208px;
 
     width: 552px;
