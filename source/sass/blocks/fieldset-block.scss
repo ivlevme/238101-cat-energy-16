@@ -6,9 +6,8 @@
   margin-bottom: 28px;
   padding-top: 0;
   padding-bottom: 0;
-  // padding-left: 0;
-  // padding-right: 0;
-  // margin-left: 0;
+  margin-left: 0;
+  margin-right: 0;
 
   position: relative;
 
@@ -19,6 +18,12 @@
   &--no-margin {
     margin-bottom: 0;
   }
+
+  &--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 .fieldset-block__left-column {
@@ -40,9 +45,9 @@
 
   margin: 0;
   padding: 0;
-  margin-left: -20px;
   padding-left: 19px;
   padding-right: 14px;
+  margin-left: -20px;
   margin-bottom: 34px;
 
   background-color: #ffffff;
@@ -59,7 +64,7 @@
 }
 
 .fieldset-block__textarea {
-  width: 280px;
+  width: 100%;
   height: 150px;
 
   resize:none;
@@ -82,7 +87,7 @@
     margin-bottom: 75px;
 
     &--cat-own {
-      margin-bottom: 65px;
+      margin-bottom: 66px;
     }
 
     &--note {
@@ -95,20 +100,24 @@
   }
 
   .fieldset-block__left-column--cat-own:first-child {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   .fieldset-block__title {
     font-size: 36px;
     line-height: 1;
 
-    margin-left: -2px;
-    margin-bottom: 77px;
-
     padding-left: 40px;
+    margin-bottom: 76px;
+    margin-left: -42px;
+    padding-right: 42px;
 
     &--addtional {
       margin-bottom: 57px;
+    }
+
+    &--note {
+      padding-right: 38px;
     }
   }
 
@@ -120,9 +129,8 @@
     font-size: 20px;
     line-height: 1.5;
 
-    width: 629px;
     height: 173px;
-    padding-top: 8px;
+    padding-top: 9px;
     padding-left: 17px;
   }
 
@@ -135,8 +143,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 602px;
-    padding-left: 37px;
+    width: 564px;
   }
 
   .fieldset-block--no-margin {
@@ -152,13 +159,18 @@
 
   .fieldset-block__left-column {
     width: 570px;
+    margin-bottom: 0;
+  }
+
+  .fieldset-block__title {
+    margin-left: -40px;
   }
 
   .fieldset-block {
-    margin-bottom: 53px;
+    margin-bottom: 69px;
 
     &--cat-own {
-      margin-bottom: 45px;
+      margin-bottom: 48px;
     }
 
     &--note {

@@ -13,6 +13,11 @@
   &--background {
     background-color: #f2f2f2;
   }
+
+  &--form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -26,15 +31,12 @@
     }
 
     &--form {
-      width: $tablet-width;
-      padding-left: 70px;
+      padding-left: 72px;
       padding-right: 67px;
     }
-
-    &--form-inner {
-      width: 630px;
-      margin-left: 40px;
-      margin-right: 40px;
+    &--form-selection {
+      margin-left: 70px;
+      margin-right: 70px;
     }
   }
 }
@@ -59,6 +61,20 @@
     &--catalog {
       padding-left: 110px;
       padding-right: 110px;
+    }
+
+    &--form {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+    }
+
+    &--fieldset-block {
+      width: 1440px;
+      padding-left: 110px;
+      padding-right: 110px;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

@@ -43,10 +43,10 @@
 
   position: absolute;
   top: 25px;
-  left: 124px;
+  left: 143px;
   opacity: 0.2;
 
-  background-image: url("../../img/icon-plus.svg");
+  background-image: url("../../img/icon-plus-mobile.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -65,6 +65,8 @@
 
     top: 54px;
     left: 131px;
+
+    background-image: url("../../img/icon-plus.svg");
   }
 
   .show-more__title {

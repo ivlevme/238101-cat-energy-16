@@ -33,30 +33,30 @@
       <p class="page-main__description page-form__description wrapper">
         Заполните анкету и мы подберем <br> программу питания для вашего кота
       </p>
-      <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="fieldset-block">
+      <form class="page-main__form wrapper--without-padding" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="fieldset-block fieldset-block--no-padding wrapper--fieldset-block">
           <div class="fieldset-block__columns">
-            <div class="fieldset-block__left-column wrapper">
-              <label class="form__label" for="cat-name">
+            <div class="fieldset-block__left-column  wrapper--form">
+              <label class="form__label form__label--data-cat" for="cat-name">
                 <span class="form__label-description">
                   Имя:*
                 </span>
                 <input class="form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
               </label>
-              <label class="form__label" for="cat-weight">
+              <label class="form__label form__label--data-cat" for="cat-weight">
                 <span class="form__label-description">
                   Вес (кг):*
                 </span>
                 <input class="form__input form__input--weight-margin" id="cat-weight" type="text" name="cat-weight" placeholder="7">
               </label>
-              <label class="form__label" for="cat-age">
+              <label class="form__label form__label--data-cat" for="cat-age">
                 <span class="form__label-description">
                   Возраст (лет):
                 </span>
                 <input class="form__input form__input--age-margin" id="cat-age" type="text" name="cat-age" placeholder="7">
               </label>
             </div>
-            <div class="form__program-selection wrapper--without-padding">
+            <div class="form__program-selection wrapper--form-selection">
               <input class="form__radio visually-hidden" id="lose-weight" type="radio" name="choice-program" value="lose-weight" checked>
               <label class="form__label form__label--radio" for="lose-weight">
                 Похудение
@@ -72,34 +72,38 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="fieldset-block fieldset-block--cat-own wrapper decorative-line decorative-line--form">
+        <fieldset class="fieldset-block fieldset-block--cat-own decorative-line decorative-line--form wrapper--form
+          wrapper--fieldset-block">
           <legend class="fieldset-block__title">
             Контактные данные <br> (владельца кота)
           </legend>
           <div class="fieldset-block__columns">
-            <label class="form__label form__label--email fieldset-block__left-column fieldset-block__left-column--cat-own" for="email">
+            <label class="form__label form__label--cat-own form__label--email" for="email">
               <span class="form__label-description">
                 E-mail:*
               </span>
               <input class="form__input form__input--cat-own form__input--email" id="email" type="email" name="email"
                 placeholder="kuklachev@gmail.com">
             </label>
-            <label class="form__label form__label--phone fieldset-block__left-column fieldset-block__left-column--cat-own" for="phone">
+            <label class="form__label form__label--cat-own form__label--phone" for="phone">
               <span class="form__label-description">
                 Телефон:*
               </span>
-              <input class="form__input form__input--cat-own" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+              <input class="form__input form__input--cat-own form__input--phone" id="phone" type="tel" name="phone"
+                placeholder="8 (960) 900-60-90">
             </label>
           </div>
         </fieldset>
-        <fieldset class="fieldset-block fieldset-block--note wrapper decorative-line decorative-line--form">
+        <fieldset class="fieldset-block fieldset-block--note decorative-line decorative-line--form wrapper--form
+          wrapper--fieldset-block">
           <legend class="fieldset-block__title fieldset-block__title--note">
             Комментарий
           </legend>
           <textarea class="fieldset-block__textarea" name="note-message"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="fieldset-block fieldset-block--no-margin wrapper decorative-line decorative-line--form">
+        <fieldset class="fieldset-block fieldset-block--no-margin decorative-line decorative-line--form wrapper--form
+          wrapper--fieldset-block">
           <legend class="fieldset-block__title fieldset-block__title--addtional">
             Дополнительно
           </legend>
@@ -122,26 +126,28 @@
             </label>
           </div>
         </fieldset>
-      <button class="form__button button wrapper" type="submit">
-        Отправить заявку
-      </button>
-      <span class="form__footnote wrapper">
-        * — Обязательные поля
-      </span>
+        <div class="form__button-wrapper wrapper">
+          <button class="form__button button wrapper" type="submit">
+            Отправить заявку
+          </button>
+          <span class="form__footnote wrapper">
+            * — Обязательные поля
+          </span>
+      </div>
       </form>
     </main>
     <div class="page__footer--form-margin">
       <footer class="page-footer">
         <section class="cooperation wrapper--without-padding">
-          <div class="cooperation__wrapper wrapper wrapper--disabled-margin cooperation__wrapper--form-padding">
+          <div class="cooperation__wrapper wrapper wrapper--disabled-margin">
             <h2 class="cooperation__title">приглашаем <br> к сотрудничеству дилеров!</h2>
             <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
           </div>
-          <img class="cooperation__map wrapper--without-padding cooperation__map--form-margin" src="img/bg-map-mobile@1x.png" width="320" height="362"
+          <img class="cooperation__map wrapper--without-padding" src="img/bg-map-mobile@1x.png" width="320" height="362"
             alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург на карте">
         </section>
-        <div class="wrapper wrapper--background page-footer__wrapper page-footer__wrapper--padding-bottom">
-          <a class="page-footer__logo logotype">
+        <div class="wrapper wrapper--background page-footer__wrapper">
+          <a href="index.html" class="page-footer__logo logotype">
             <img class="page-footer__logo-name" src="img/logo-footer.svg" width="128" height="24" alt="Текст логотипа Cat
               Energy">
           </a>

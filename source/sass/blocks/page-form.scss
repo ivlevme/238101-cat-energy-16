@@ -10,13 +10,16 @@
   margin-bottom: 26px;
 }
 
-.page-main__description {
+.page-form__description {
   margin-top: 0;
   margin-bottom: 39px;
-  // width: 320px;
 }
 
 @media (min-width: $tablet-width) {
+  .page-form__title {
+    margin-bottom: 55px;
+  }
+
   .page-form__header {
     margin-top: 23px;
     border-bottom: none;
@@ -25,6 +28,9 @@
   .page-form__description {
     font-size: 20px;
     line-height: 1.5;
+    padding-left: 70px;
+
+    margin-bottom: 66px;
   }
 }
 
@@ -35,6 +41,6 @@
   }
 
   .page-form__description {
-    margin-left: 0;
+    padding-left: 110px;
   }
 }
