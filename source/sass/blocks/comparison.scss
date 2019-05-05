@@ -1,32 +1,73 @@
 .comparison {
-  // margin-top: 36px;
   min-height: 328px;
 
-  // background-color: #f2f2f2;
+  position: relative;
 }
 
 .comparison__progress {
   margin-top: 30px;
 }
 
-.comparison__photo {
-  // margin-left: -16px;
+.comparison__photo-after {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  z-index: -1;
 }
 
 @media (min-width: $tablet-width) {
   .comparison {
-    padding-bottom: 68px;
+    padding-bottom: 70px;
 
     background-color: #F2F2F2;
   }
 
+  .comparison__photos {
+    display: flex;
+    background-image: linear-gradient(to bottom,#fff,#fff 170px,#f2f2f2 170px,#f2f2f2);
+
+    min-height: 633px;
+  }
+
   .comparison__photo {
-    margin-top: -169px;
     margin-left: 46px;
   }
 
   .comparison__progress {
-    margin-top: 18px;
+    margin-top: -95px;
+
+    z-index: 2;
+
+    position: relative;
+  }
+
+  .comparison__photo-before,
+  .comparison__photo-after {
+    width: 50%;
+    min-height: 633px;
+
+    overflow: hidden;
+  }
+
+  .comparison__photo-before img {
+    max-width: 690px;
+  }
+
+  .comparison__photo-after img {
+    margin-left: -338px;
+  }
+
+
+  .comparison__photo-after {
+    background-image: linear-gradient(to bottom, #fff, #fff 170px, #eaeaea 170px, #eaeaea);
+
+    z-index: 1;
+  }
+
+  .comparison__photo-after img {
+    max-width: 690px;
+    z-index: 1;
   }
 }
 
@@ -34,19 +75,45 @@
   .comparison {
     width: auto;
     padding-bottom: 0;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .comparison__photo {
     display: block;
     margin: 0;
-    margin-top: -192px;
     margin-right: 70px;
   }
 
+  .comparison__photos {
+    min-height: 652px;
+  }
+
+  .comparison__photo-before,
+  .comparison__photo-after {
+    min-height: 652px;
+  }
+
   .comparison__progress {
-    margin-top: 42px;
+    margin-top: -94px;
     margin-left: auto;
     margin-right: 110px;
+  }
+
+  .comparison__photos {
+    background-image: linear-gradient(to bottom,#fff,#fff 191px,#f2f2f2 191px,#f2f2f2);
+  }
+
+  .comparison__photo-before {
+    width: 48%;
+  }
+
+  .comparison__photo-after {
+    width: 52%;
+    background-image: linear-gradient(to bottom, #fff, #fff 191px, #eaeaea 191px, #eaeaea);
+  }
+
+  .comparison__photo-after img {
+    margin-left: -364px;
   }
 }

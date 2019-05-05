@@ -7,10 +7,13 @@
 
 .page-footer__logo {
   display: block;
-  padding-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   text-align: center;
+}
+
+.page-footer__wrapper {
+  padding-top: 39px;
 }
 
 .page-footer__social-wrapper {
@@ -32,8 +35,8 @@
     display: flex;
     justify-content: space-between;
 
-    padding-top: 59px;
-    padding-bottom: 29px;
+    padding-top: 51px;
+    padding-bottom: 30px;
   }
 
   .page-footer__social-wrapper {
@@ -43,7 +46,8 @@
   }
 
   .page-footer__logo {
-    padding-top: 14px;
+    padding-top: 13px;
+    margin-left: 1px;
   }
 
   .page-footer__copyright {

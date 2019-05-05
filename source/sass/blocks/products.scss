@@ -27,7 +27,11 @@
 }
 
 .products__column-right {
-  width: 100%;
+  width: 50%;
+}
+
+.products__column-left {
+  width: 50%;
 }
 
 .products__title {
@@ -43,6 +47,10 @@
 
 .products__description {
   margin-top: 13px;
+}
+
+.products__buy {
+  margin-top: -2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -83,7 +91,18 @@
   .products__photo {
     display: block;
     margin: 0 auto;
-    margin-bottom: 19px;
+    margin-top: -48px;
+    margin-bottom: 37px;
+
+    &--small {
+      margin-top: -46px;
+      margin-bottom: 37px;
+    }
+
+    &--big {
+      margin-top: -82px;
+      margin-bottom: 38px;
+    }
   }
 
   .products__title {
@@ -113,13 +132,27 @@
   .products__item {
     width: 245px;
     margin: 0;
-    margin-bottom: 143px;
+    margin-bottom: 142px;
   }
 
   .products__item:nth-child(5),
   .products__item:nth-child(6),
   .products__item:nth-child(7) {
     margin-bottom: 0; // FIXME: Возможно сделать как-то по другому
+  }
+
+  .products__photo {
+    margin-top: -46px;
+    margin-bottom: 36px;
+
+    &--big {
+      margin-top: -81px;
+      margin-bottom: 37px;
+    }
+
+    &--small {
+      margin-top: -45px;
+    }
   }
 
   .products__title {

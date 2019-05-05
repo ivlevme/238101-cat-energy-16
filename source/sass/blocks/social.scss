@@ -85,6 +85,11 @@
     margin-top: -2px;
     padding-top: 0;
   }
+
+  .social__link--facebook svg {
+    width: 14px;
+    height: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {

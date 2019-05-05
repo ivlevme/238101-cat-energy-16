@@ -1,15 +1,54 @@
 .cooperation {
+  min-height: 475px;
+  padding-top: 1px;
+
+  position: relative;
+
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
   &--catalog {
     padding-top: 15px;
   }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+    background-size: 320px auto;
+  }
+}
+
+.cooperation::before {
+  content: "";
+
+  position: absolute;
+
+  top: 252px;
+  left: 132px;
+
+  width: 55px;
+  height: 53px;
+
+  background-image: url("../../img/map-pin.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  background-size: cover;
 }
 
 .cooperation__wrapper {
   display: flex;
   justify-content: space-between;
 
-  padding-top: 14px; //мобилка каталог
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
+  background-color: #fff;
+
+  &--background-gray {
+    background-color: #f2f2f2;
+  }
 }
 
 .cooperation__title {
@@ -43,6 +82,28 @@
 }
 
 @media (min-width: $tablet-width) {
+  .cooperation {
+    min-height: 596px;
+
+    background-image: url("../../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+      background-size: 767px auto;
+    }
+  }
+
+  .cooperation::before {
+    width: 113px;
+    height: 106px;
+
+    top: auto;
+    bottom: 144px;
+    left: 329px;
+    background-size: auto;
+  }
+
   .cooperation__title {
     font-size: 20px;
     line-height: 1.25;
@@ -57,7 +118,7 @@
     text-align: right;
 
     width: 200px;
-    margin-top: 15px;
+    margin-top: 13px;
     padding-right: 42px;
   }
 
@@ -97,6 +158,11 @@
     }
   }
 
+  .cooperation::before {
+    left: auto;
+    right: 323px;
+  }
+
   .cooperation__map {
     display: none;
   }
@@ -129,5 +195,6 @@
 
     width: 244px;
     padding-right: 70px;
+    margin-top: 15px;
   }
 }
