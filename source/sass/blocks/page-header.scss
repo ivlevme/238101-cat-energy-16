@@ -34,22 +34,23 @@
     width: 203px;
     height: auto;
   }
+
   .page__header--index {
     align-items: flex-start;
 
     min-height: 696px;
     padding-top: 55px;
-    padding-right: 110px;
-    padding-left: 109px;
+    // padding-right: 110px;
+    // padding-left: 109px;
 
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
-      background-size: 720px auto;
-    }
+    // background-image: url("../../img/index-background-desktop@1x.jpg");
+    // background-repeat: no-repeat;
+    // background-position: right;
+    //
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../../img/index-background-desktop@2x.jpg");
+    //   background-size: 720px auto;
+    // }
   }
 }

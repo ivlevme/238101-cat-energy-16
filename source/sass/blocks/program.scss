@@ -73,10 +73,11 @@
   line-height: 1.29;
   color: #444444;
 
-  width: 236px;
+  // width: 236px;
   margin: 0;
   margin-left: 20px;
   padding: 0;
+  padding-right: 25px;
   padding-bottom: 22px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -173,13 +174,13 @@
     font-size: 16px;
     line-height: 1.5;
 
-    width: 380px;
+    width: 400px;
     margin-left: 53px;
 
     border: none;
 
     &--less-margin {
-      width: 340px;
+      width: 365px;
     }
   }
 
@@ -236,7 +237,7 @@
   }
 
   .program__description {
-    width: 465px;
+    width: 500px;
   }
 
   .program__button {

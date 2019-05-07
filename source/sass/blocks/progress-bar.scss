@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  width: 198px;
-  // margin: 0 auto;
+  width: 202px;
   margin-left: 64px;
 }
 
@@ -19,6 +18,10 @@
   border: none;
 
   background-color: transparent;
+}
+
+.progress-bar__been {
+  margin-left: 4px;
 }
 
 .progress-bar__indicator {
@@ -76,6 +79,10 @@
     background-color: #dcdcdc;
   }
 
+  .progress-bar__been {
+    margin-left: 0;
+  }
+
   .progress-bar__indicator-complete {
     width: 8px;
     height: 8px;
@@ -86,18 +93,18 @@
 
     border-radius: 50%;
     box-shadow: 0 0 0 12px #ffffff,
-    0 0 0 13px #cdcdcd,
-    0 5px 9px 10px rgba(0, 0, 0, 0.3);
+      0 0 0 13px #cdcdcd,
+      0 5px 9px 10px rgba(0, 0, 0, 0.3);
 
     &:hover {
       box-shadow: 0 0 0 10px #ffffff,
-      0 5px 15px 10px rgba(0, 0, 0, 0.3);
+        0 5px 15px 10px rgba(0, 0, 0, 0.3);
     }
 
     &:focus {
       box-shadow: 0 0 0 10px #ffffff,
-      0 0 0 11px #68b738,
-      0 4px 6px 13px rgba(0, 0, 0, 0.3);
+        0 0 0 11px #68b738,
+        0 4px 6px 13px rgba(0, 0, 0, 0.3);
     }
   }
 }

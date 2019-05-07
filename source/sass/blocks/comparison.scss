@@ -5,13 +5,23 @@
 }
 
 .comparison__progress {
+  margin: 0 auto;
   margin-top: 30px;
+}
+
+.comparison__photos {
+  margin: 0 auto;
+}
+
+.comparison__photo-before {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .comparison__photo-after {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 
   z-index: -1;
 }
@@ -20,22 +30,24 @@
   .comparison {
     padding-bottom: 70px;
 
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+    background-image:
+      linear-gradient(to bottom, #ffffff, #ffffff 170px, transparent 170px, transparent),
+      linear-gradient(to right, #f2f2f2, #f2f2f2 50%, #eaeaea 50%, #eaeaea);
   }
 
   .comparison__photos {
     display: flex;
-    background-image: linear-gradient(to bottom,#fff,#fff 170px,#f2f2f2 170px,#f2f2f2);
 
-    min-height: 633px;
+    min-height: 631px;
   }
 
   .comparison__photo {
-    margin-left: 46px;
+    margin-left: 16px;
   }
 
   .comparison__progress {
-    margin-top: -95px;
+    margin-top: -93px;
 
     z-index: 2;
 
@@ -45,7 +57,7 @@
   .comparison__photo-before,
   .comparison__photo-after {
     width: 50%;
-    min-height: 633px;
+    // min-height: 633px;
 
     overflow: hidden;
   }
@@ -55,18 +67,15 @@
   }
 
   .comparison__photo-after img {
+    max-width: 690px;
     margin-left: -338px;
-  }
-
-
-  .comparison__photo-after {
-    background-image: linear-gradient(to bottom, #fff, #fff 170px, #eaeaea 170px, #eaeaea);
 
     z-index: 1;
   }
 
-  .comparison__photo-after img {
-    max-width: 690px;
+
+  .comparison__photo-after {
+    position: static;
     z-index: 1;
   }
 }
@@ -74,9 +83,24 @@
 @media (min-width: $desktop-width) {
   .comparison {
     width: auto;
-    padding-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 68px;
+
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff 191px, transparent 191px, transparent);
+  }
+
+  .comparison::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 46.5%;
   }
 
   .comparison__photo {
@@ -87,6 +111,8 @@
 
   .comparison__photos {
     min-height: 652px;
+    width: 610px;
+    padding: 0;
   }
 
   .comparison__photo-before,
@@ -96,24 +122,24 @@
 
   .comparison__progress {
     margin-top: -94px;
+    margin-right: 0;
     margin-left: auto;
-    margin-right: 110px;
-  }
-
-  .comparison__photos {
-    background-image: linear-gradient(to bottom,#fff,#fff 191px,#f2f2f2 191px,#f2f2f2);
   }
 
   .comparison__photo-before {
-    width: 48%;
+    width: 53.5%;
+    margin: 0;
   }
 
   .comparison__photo-after {
-    width: 52%;
-    background-image: linear-gradient(to bottom, #fff, #fff 191px, #eaeaea 191px, #eaeaea);
+    width: 46.5%;
+  }
+
+  .comparison__photo-before img {
+    margin-left: -40px;
   }
 
   .comparison__photo-after img {
-    margin-left: -364px;
+    margin-left: -366px;
   }
 }

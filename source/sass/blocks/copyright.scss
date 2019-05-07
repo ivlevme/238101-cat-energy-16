@@ -15,19 +15,19 @@
   width: 42px;
   height: auto;
   margin-right: -8px;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .copyright__link svg {
-    fill: #666666;
+  fill: #666666;
 }
 
 .copyright:hover svg {
-    fill: #68b738;
+  fill: #68b738;
 }
 
 .copyright:focus {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

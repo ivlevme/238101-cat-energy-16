@@ -71,12 +71,13 @@
 
 .form__radio:checked + .form__label--radio::before {
   background-color: #68b738;
-  box-shadow: inset 0px 0px 0px 8px #ffffff;
+  box-shadow: inset 0 0 0 8px #ffffff;
 }
 
 .form__radio:focus + label::before,
 .form__checkbox:focus + label::before {
-  outline: thin dotted;
+  // outline-style: dotted;
+  // outline-width: thin;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -113,9 +114,9 @@
   margin-bottom: 14px;
   margin-left: 14px;
   padding-left: 14px;
-  padding-top: 0px;
+  padding-top: 0;
 
-  border: 1px solid rgba(205,205,205, 0.5);
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   padding-right: 40px;
 
@@ -138,7 +139,6 @@
   }
 }
 
-// FIXME:
 
 .form__svg {
   position: absolute;
@@ -190,7 +190,7 @@
   top: 3px;
   left: 0;
 
-  border: 1px solid rgba(205,205,205, 0.5);
+  border: 1px solid rgba(205, 205, 205, 0.5);
 }
 
 .form__checkbox:checked + .form__label--checkbox::after {
@@ -203,7 +203,7 @@
   top: 10px;
   left: 5px;
 
-  background-image: url(../../img/icon-tick.svg);
+  background-image: url("../../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
@@ -219,7 +219,7 @@
   display: flex;
   flex-direction: column;
 
-  border: 1px solid rgba(205,205,205, 0.5);
+  border: 1px solid rgba(205, 205, 205, 0.5);
   padding-bottom: 17px;
   padding-top: 17px;
 }
@@ -236,6 +236,7 @@
   letter-spacing: 1px;
 
   margin-top: 29px;
+  margin-left: 0;
 }
 
 .form__footnote {
@@ -318,7 +319,7 @@
 
   .form__radio:checked + .form__label--radio::before {
     background-color: #68b738;
-    box-shadow: inset 0px 0px 0px 10px #ffffff;
+    box-shadow: inset 0 0 0 10px #ffffff;
   }
 
   .form__input {
@@ -389,7 +390,7 @@
   .form__bottom-wrapper {
     display: flex;
     justify-content: space-around;
-}
+  }
 
   .form__button-wrapper {
     display: flex;
@@ -418,7 +419,6 @@
     margin-top: 16px;
     margin-left: 61px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -435,13 +435,12 @@
 
   .form__label {
     &--checkbox {
+      width: 243px;
       padding-left: 58px;
     }
+
     &--data-cat {
       margin-left: 2px;
-    }
-    &--checkbox {
-      width: 243px;
     }
 
     &--cat-own {

@@ -40,10 +40,11 @@
 
   width: 31px;
   height: 31px;
+  margin-left: -15px;
 
   position: absolute;
   top: 25px;
-  left: 143px;
+  left: 50%;
   opacity: 0.2;
 
   background-image: url("../../img/icon-plus-mobile.svg");
@@ -62,9 +63,9 @@
   .show-more::before {
     width: 61px;
     height: 61px;
+    margin-left: -30px;
 
     top: 54px;
-    left: 131px;
 
     background-image: url("../../img/icon-plus.svg");
   }
@@ -103,7 +104,6 @@
 
   .show-more::before {
     top: 54px;
-    left: 91px;
   }
 
   .show-more__title {

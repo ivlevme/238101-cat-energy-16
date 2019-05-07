@@ -1,17 +1,25 @@
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   &--without-padding {
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0;
   }
 
   &--background {
     background-color: #f2f2f2;
+  }
+
+  &--background-cooperation {
+    background-color: #f2f2f2;
+  }
+
+  &--background-white {
+    background-color: #ffffff;
   }
 
   &--form {
@@ -34,9 +42,21 @@
       padding-left: 72px;
       padding-right: 67px;
     }
+
     &--form-selection {
       margin-left: 70px;
       margin-right: 70px;
+    }
+
+    &--comparison {
+      width: $tablet-width;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0 auto;
+    }
+
+    &--background-white {
+      background-color: transparent;
     }
   }
 }
@@ -44,8 +64,8 @@
 @media (min-width: $desktop-width) {
   .wrapper {
     width: $desktop-width;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     &--disabled-margin {
       width: $desktop-width;
@@ -58,11 +78,6 @@
       width: $desktop-width;
     }
 
-    &--catalog {
-      padding-left: 110px;
-      padding-right: 110px;
-    }
-
     &--form {
       margin-left: 0;
       margin-right: 0;
@@ -70,11 +85,15 @@
     }
 
     &--fieldset-block {
-      width: 1440px;
-      padding-left: 110px;
-      padding-right: 110px;
+      width: $desktop-width;
+      padding-left: 40px;
+      padding-right: 40px;
       margin-left: 0;
       margin-right: 0;
+    }
+
+    &--background-cooperation {
+      background-color: transparent;
     }
   }
 }

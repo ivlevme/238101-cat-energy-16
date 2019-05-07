@@ -10,8 +10,8 @@
 .products__item {
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 17px;
+  // padding-left: 20px;
+  // padding-right: 17px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ededed;
 
@@ -51,6 +51,7 @@
 
 .products__buy {
   margin-top: -2px;
+  margin-left: -1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,7 +68,7 @@
   .products__item {
     width: 324px;
     background-color: #f2f2f2;
-    margin: 0 auto;
+    // margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 140px;

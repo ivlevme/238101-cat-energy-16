@@ -20,17 +20,19 @@
   line-height: 1.29;
   color: #444444;
 
-  width: 270px;
+  // width: 270px;
+  padding-right: 10px;
   margin-bottom: 25px;
 }
 
 .live-example__statistics {
+  margin: 0 auto;
   margin-bottom: 17px;
 }
 
 .live-example__price {
-  margin: 0;
-  margin-left: 46px;
+  margin: 0 auto;
+  // margin-left: 46px;
 }
 
 .live-example__price br {
@@ -39,11 +41,6 @@
 
 .live-example__comparison {
   margin-top: 33px;
-}
-
-.live-example__left-column {
-  // padding-left: 0;
-  // padding-right: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,6 +69,11 @@
   .live-example__table-wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .live-example__statistics {
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .live-example__comparison {
@@ -107,7 +109,7 @@
   }
 
   .live-example__description {
-    width: 438px;
+    width: 445px;
     margin: 0;
     margin-bottom: 68px;
     padding-top: 70px;
@@ -116,19 +118,17 @@
   .live-example__wrapper {
     display: flex;
     justify-content: space-between;
-    //
-    // width: $desktop-width;
-    // padding-left: 110px;
-    // padding-right: 0;
-    // margin: 0 auto;
+
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
 
   .live-example__left-column {
     width: auto;
     padding: 0;
     margin: 0;
-
-    margin-left: 110px;
   }
 
   .live-example__table-wrapper {
@@ -137,6 +137,8 @@
 
   .live-example__statistics {
     margin-bottom: 0;
+    // margin-left: 0;
+    // margin-right: auto;
   }
 
   .live-example__price {
