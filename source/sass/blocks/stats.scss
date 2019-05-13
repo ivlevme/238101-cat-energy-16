@@ -11,11 +11,14 @@
 .stats tr {
   text-align: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+  display: block;
   width: 124px;
+}
+
+.stats td {
+  display: block;
+  // margin-left: 10px;
+  // margin-right: 10px;
 }
 
 .stats__value {
@@ -41,8 +44,15 @@
   width: 88px;
   margin: 0 auto;
   margin-top: -10px;
+  margin-left: 9px;
+  margin-right: 9px;
 
   background-color: #f2f2f2;
+
+  &--lose-weight {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
 }
 
 @media (min-width: $tablet-width) {

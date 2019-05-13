@@ -4,7 +4,7 @@
 
   &--background-wrapper {
     background-color: #63a837;
-    background-image: url("../../img/index-background-mobile@1x.jpg"),
+    background-image: url("../img/index-background-mobile@1x.jpg"),
       linear-gradient(to top, #ffffff 175px, transparent 175px);
     background-repeat: no-repeat;
     background-position: top;
@@ -12,7 +12,7 @@
     padding-top: 1px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-mobile@2x.jpg"),
+      background-image: url("../img/index-background-mobile@2x.jpg"),
         linear-gradient(to top, #ffffff 175px, transparent 175px);
       background-size: 320px auto, auto;
     }
@@ -130,14 +130,11 @@
 
   .program-selection__description {
     margin: 0;
-    // margin-top: 79px;
-    // margin-left: 70px;
     margin-bottom: 41px;
   }
 
   .program-selection__intro {
     margin-bottom: 0;
-    // margin-left: 70px;
   }
 
   .program-selection__wrapper {
@@ -154,9 +151,10 @@
   .program-selection__food-image {
     position: absolute;
     top: 81px;
-    right: 208px;
+    left: 50%;
 
     width: 552px;
     height: auto;
+    margin-left: -160px;
   }
 }

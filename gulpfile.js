@@ -20,7 +20,9 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -61,7 +63,7 @@ gulp.task("webp", function () {
   .pipe(gulp.dest("source/img"));
 });
 gulp.task("sprite", function () {
-  return gulp.src("source/img/**/*.svg")
+  return gulp.src("source/img/**/icon-*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -70,6 +72,9 @@ gulp.task("sprite", function () {
 })
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+  // .pipe(posthtml([
+  //   include()
+  // ]))
   .pipe(gulp.dest("build"));
 })
 gulp.task("copy", function () {
@@ -77,8 +82,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico",
-    "source/css/normalize.css"
+    "source/*.ico"
   ], {
     base: "source"
   })
