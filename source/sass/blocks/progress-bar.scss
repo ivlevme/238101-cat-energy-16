@@ -84,27 +84,29 @@
   }
 
   .progress-bar__indicator-complete {
-    width: 8px;
-    height: 8px;
+    width: 34px;
+    height: 34px;
     margin: 0 auto;
-    margin-left: 213px;
+    margin-left: 199px;
     margin-right: auto;
-    margin-top: -1px;
+    margin-top: -15px;
 
     border-radius: 50%;
-    box-shadow: 0 0 0 12px #ffffff,
-      0 0 0 13px #cdcdcd,
-      0 5px 9px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #cdcdcd;
+    box-shadow: inset 0 0 0 12px #ffffff,
+      0 2px 5px 0 rgba(0, 0, 0, 0.15);
 
     &:hover {
-      box-shadow: 0 0 0 10px #ffffff,
-        0 5px 15px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0 0 0 12px #ffffff,
+        0px 3px 5px 0 rgba(0, 0, 0, 0.25);
     }
 
     &:focus {
-      box-shadow: 0 0 0 10px #ffffff,
-        0 0 0 11px #68b738,
-        0 4px 6px 13px rgba(0, 0, 0, 0.3);
+      // width: 36px;
+      // height: 36px;
+      border: 2px solid #68b738;
+      box-shadow: inset 0 0 0 11px #ffffff,
+        0px 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }
