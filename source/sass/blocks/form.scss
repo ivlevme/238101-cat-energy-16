@@ -32,7 +32,7 @@
     padding-left: 46px;
     padding-top: 8px;
     padding-bottom: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
 
   &--checkbox:nth-last-child(2) {
@@ -232,10 +232,12 @@
   white-space: nowrap;
 }
 
+.form__button-wrapper {
+    margin-top: 31px;
+}
+
 .form__button {
   letter-spacing: 1px;
-
-  margin-top: 29px;
   margin-left: 0;
 }
 
@@ -246,8 +248,8 @@
   color: #444444;
 
   display: block;
-  margin-left: 42px;
   margin-top: 21px;
+  margin-left: 62px;
 }
 
 @media (min-width: $tablet-width) {

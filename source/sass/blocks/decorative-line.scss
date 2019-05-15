@@ -1,24 +1,39 @@
-.decorative-line::before {
+.decorative-line::before,
+.decorative-line::after {
   content: "";
 
-  width: 100%;
+  width: 100vw;
   height: 3px;
+  margin-bottom: 8px;
 
   position: absolute;
-  top: 16px;
   left: 0;
+  bottom: 0;
+
 
   background-color: #68b738;
   z-index: -1;
 }
 
-.decorative-line--form::before {
-  top: 14px;
+.decorative-line::before {
+  display: none;
+}
+
+.decorative-line--cat-own::after {
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
   .decorative-line::before {
-    top: 22px;
-    left: 0;
+    display: block;
+    margin-bottom: 11px;
+    left: auto;
+    right: 100%;
+  }
+
+  .decorative-line::after {
+    display: block;
+    width: 100vw;
+    margin-bottom: 11px;
   }
 }

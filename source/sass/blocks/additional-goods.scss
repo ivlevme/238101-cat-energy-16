@@ -20,10 +20,14 @@
 .additional-goods__title {
   font-weight: 400;
 
+  display: inline-block;
+  vertical-align: top;
   width: 268px;
   padding-left: 20px;
   margin-left: -20px;
   margin-bottom: 33px;
+
+  position: relative;
 
   background-color: #ffffff;
 }
