@@ -18,6 +18,15 @@
   }
 }
 
+.cooperation__map {
+  display: block;
+  width: 100%;
+  height: 362px;
+
+  position: relative;
+  z-index: 2;
+}
+
 .cooperation::before {
   content: "";
 
@@ -75,7 +84,7 @@
 
 .cooperation__map {
   display: block;
-  // margin-top: 10px;
+  border: none;
 }
 
 .cooperation__address br {
@@ -143,7 +152,7 @@
   }
 
   .cooperation__map {
-    height: 387px;
+    height: 396px;
     margin-top: 0;
   }
 }
@@ -168,10 +177,6 @@
     margin-left: 284px;
   }
 
-  .cooperation__map {
-    display: none;
-  }
-
   .cooperation__wrapper {
     width: 570px;
     margin-top: 94px;
@@ -188,6 +193,17 @@
     &--form-padding {
       margin-top: 94px;
     }
+  }
+
+  .cooperation__map {
+    position: absolute;
+    top: 0;
+    height: 400px;
+  }
+
+  .cooperation__wrapper {
+    position: relative;
+    z-index: 3;
   }
 
   .cooperation__title {
