@@ -44,7 +44,7 @@
                 <span class="form__label-description">
                   Имя:*
                 </span>
-                <input class="form__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+                <input class="form__input form__input--name" id="cat-name" type="text" name="cat-name" placeholder="БАРСИК">
               </label>
               <label class="form__label form__label--data-cat" for="cat-weight">
                 <span class="form__label-description">
@@ -84,11 +84,9 @@
               <span class="form__label-description">
                 E-mail:*
               </span>
-              <input class="form__input form__input--cat-own form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              <input class="form__input form__input--cat-own form__input--email" id="email" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM">
                 <span class="form__svg form__svg-email">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
-                    <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"></path>
-                  </svg>
+                  <svg width="18" height="14"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
                 </span>
             </label>
             <label class="form__label form__label--cat-own form__label--phone" for="phone">
@@ -97,13 +95,7 @@
               </span>
               <input class="form__input form__input--cat-own form__input--phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
               <span class="form__svg form__svg-phone">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
-                  <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"></path>
-                  <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
-                  c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
-                  C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-                  C7.8,20,8.1,19.7,8.1,19.4z"></path>
-                </svg>
+                <svg width="21" height="21"><use xlink:href="img/sprite.svg#icon-phone"></use></svg>
               </span>
             </label>
           </div>
@@ -113,7 +105,7 @@
           <legend class="fieldset-block__title fieldset-block__title--note decorative-line decorative-line--form">
             Комментарий
           </legend>
-          <textarea class="fieldset-block__textarea" name="note-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="fieldset-block__textarea" name="note-message" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
         </fieldset>
         <fieldset class="fieldset-block fieldset-block--no-margin wrapper--form
           wrapper--fieldset-block">
@@ -155,7 +147,7 @@
           <div class="wrapper wrapper--background-cooperation">
             <div class="cooperation__wrapper">
               <h2 class="cooperation__title">приглашаем <br> к сотрудничеству дилеров!</h2>
-              <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</p>
+              <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__address-city">Санкт-Петербург</span></p>
             </div>
           </div>
         </section>
@@ -187,7 +179,7 @@
             <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
               <p class="copyright__organization">HTML Academy</p>
               <span class="copyright__link">
-                <svg width="40" height="40"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg>
+                <svg width="40" height="40"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
                 <span class="visually-hidden">HTML Academy</span>
               </span>
             </a>

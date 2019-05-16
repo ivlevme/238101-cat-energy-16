@@ -121,12 +121,19 @@
     padding-right: 42px;
   }
 
+  .cooperation__address-city {
+    display: inline-block;
+    vertical-align: top;
+
+    margin-top: 21px;
+  }
+
   .cooperation__address br {
     display: block;
   }
 
   .cooperation__wrapper {
-    padding-top: 46px; //32
+    padding-top: 47px; //32
     padding-bottom: 42px;
 
     &--form-padding {

@@ -52,20 +52,14 @@
     margin-bottom: 0;
   }
 
-  .composition__field {
-    font-size: 16px;
-    line-height: 1;
-    color: #444444;
-
-    width: auto;
-  }
-
+  .composition__field,
   .composition__value {
     font-size: 16px;
     line-height: 1;
     color: #444444;
 
     width: auto;
+    display: block;
   }
 }
 

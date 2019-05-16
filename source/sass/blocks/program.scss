@@ -77,7 +77,7 @@
   margin: 0;
   margin-left: 20px;
   padding: 0;
-  padding-right: 25px;
+  margin-right: 25px;
   padding-bottom: 22px;
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -120,13 +120,6 @@
   top: 3px;
   left: 97px;
 }
-
-// .program__button:hover::before {
-//   width: 34px;
-//   top: 3px;
-//   background-image: url("../img/icon-right-arrow-verylong.svg");
-// }
-
 
 .program__button--catalog-pro::before {
   left: 95px;
@@ -176,6 +169,7 @@
 
     width: 400px;
     margin-left: 53px;
+    padding-right: 22px;
 
     border: none;
 
@@ -244,8 +238,12 @@
     margin-top: 10px;
   }
 
+  .program__button::before {
+    top: 3px;
+  }
+
   .program__button:hover::before {
-    top: 5px;
+    top: 3px;
   }
 
   .program:last-child {

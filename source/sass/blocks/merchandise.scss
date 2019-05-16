@@ -129,12 +129,16 @@
   }
 
   .merchandise__field {
-    width: auto;
+    width: 200px;
   }
 
   .merchandise__price {
     text-align: left;
-    width: 44px;
+    width: auto;
+
+    &--less {
+      width: 43px;
+    }
   }
 
   .merchandise__button {
