@@ -6,6 +6,7 @@
 .stats tbody {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .stats tr {

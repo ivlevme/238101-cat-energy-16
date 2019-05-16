@@ -8,8 +8,12 @@
 
   position: relative;
 
-  &--cat-own:first-child {
+  &--cat-own {
     margin-bottom: 14px;
+  }
+
+  &--cat-own:last-child {
+    margin-bottom: 0;
   }
 
   &--radio {
@@ -217,7 +221,7 @@
 }
 
 .form__button-wrapper {
-    margin-top: 31px;
+  margin-top: 31px;
 }
 
 .form__button {
@@ -253,8 +257,12 @@
     width: auto;
     margin-bottom: 6px;
 
-    &--cat-own:first-child {
+    &--cat-own {
       margin-bottom: 19px;
+    }
+
+    &--cat-own:last-child {
+      margin-bottom: 0;
     }
 
     &--phone {
@@ -272,14 +280,15 @@
       margin: 0;
       padding: 0;
       padding-top: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 32px;
       padding-left: 56px;
+      margin-bottom: 9px;
     }
   }
 
-  .form__label--checkbox:nth-child(1),
-  .form__label--checkbox:nth-child(2) {
-    margin-bottom: 32px;
+  .form__label--checkbox:nth-last-child(1),
+  .form__label--checkbox:nth-last-child(3) {
+    margin-bottom: 0;
   }
 
   .form__checkbox:checked + .form__label--checkbox::after {
@@ -330,8 +339,7 @@
 
     &--email {
       margin-left: 19px;
-      padding-left: 20px;
-      // padding-top: 0;
+      padding-left: 18px;
     }
 
     &--phone {
@@ -364,10 +372,6 @@
     padding-left: 18px;
   }
 
-  .form__input--email {
-    padding-left: 18px;
-  }
-
   .form__input::placeholder {
     font-size: 20px;
     line-height: 20px;
@@ -386,8 +390,9 @@
 
   .form__button-wrapper {
     display: flex;
+    flex-wrap: wrap;
 
-    margin-top: 55px;
+    margin-top: 33px;
   }
 
   .form__button {

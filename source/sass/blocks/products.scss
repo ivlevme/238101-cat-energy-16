@@ -10,16 +10,10 @@
 .products__item {
   margin: 0;
   padding: 0;
-  // padding-left: 20px;
-  // padding-right: 17px;
   padding-bottom: 24px;
   border-bottom: 1px solid #ededed;
 
   list-style: none;
-}
-
-.products__item:last-child {
-  // margin-bottom: 0;
 }
 
 .products__columns {
@@ -63,6 +57,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   .products__item {
@@ -136,9 +131,10 @@
     margin-bottom: 142px;
   }
 
-  .products__item:nth-child(5),
-  .products__item:nth-child(6),
-  .products__item:nth-child(7) {
+  .products__item:nth-last-child(4),
+  .products__item:nth-last-child(3),
+  .products__item:nth-last-child(2),
+  .products__item:nth-last-child(1) {
     margin-bottom: 0; // FIXME: Возможно сделать как-то по другому
   }
 
