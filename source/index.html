@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="/fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page">
     <div class="page__header-background">
@@ -50,8 +52,7 @@
           <img class="program-selection__food-image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
             alt="Фото еды Cat Energy">
         </picture>
-        <button class="program-selection__wrapper program-selection__button button button--main" type="button">Подобрать программу
-        </button>
+        <a class="program-selection__wrapper program-selection__button button" href="form.html">Подобрать программу</a>
       </section>
       <section class="program-options wrapper page-main__program-options">
         <h2 class="visually-hidden">Все программы Cat Energy</h2>
@@ -59,13 +60,13 @@
           <h3 class="program__title program__title-slim">Похудение</h3>
           <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
             Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html" class="program__button">Каталог Slim</a>
+          <a href="catalog.html/slim.html" class="program__button">Каталог Slim</a>
         </article>
         <article class="program-options__item program">
           <h3 class="program__title program__title-gain">Набор массы</h3>
           <p class="program__description program__description--less-margin">Заработать авторитет среди дворовых котов и даже
             собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="catalog.html" class="program__button program__button--catalog-pro">Каталог pro</a>
+          <a href="catalog.html/gain.html" class="program__button program__button--catalog-pro">Каталог pro</a>
         </article>
       </section>
       <section class="advatages wrapper page-main__advatages">
