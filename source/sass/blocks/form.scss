@@ -95,14 +95,14 @@
   padding-left: 14px;
   padding-top: 11px;
   padding-bottom: 14px;
+  padding-right: 5px;
 
   border: 1px solid rgba(205, 205, 205, 0.5);
-
-  padding-right: 40px;
 
   &--cat-own {
     margin-left: 10px;
     margin-bottom: 0;
+    padding-right: 40px;
   }
 
   &--weight-margin {
@@ -138,11 +138,19 @@
   right: 15px;
 }
 
-.form__input--cat-own:focus + .form__svg {
+.form__input:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid #ff8282;
+}
+
+.form__input:focus:invalid {
+  border: 2px solid #ff8282;
+}
+
+.form__input--cat-own:focus:valid + .form__svg {
   fill: #68b738;
 }
 
-.form__input--cat-own:invalid + .form__svg {
+.form__input--cat-own:focus:invalid + .form__svg {
   fill: #ff8282;
 }
 
@@ -170,10 +178,6 @@
 
 .form__input--phone:focus {
   padding-left: 13px;
-}
-
-.form__input:invalid {
-  border: 2px solid #ff8282;
 }
 
 .form__label--checkbox::before {
