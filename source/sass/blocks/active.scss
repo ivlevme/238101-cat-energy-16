@@ -11,5 +11,9 @@
 @media (min-width: $desktop-width) {
   .active {
     border-bottom: 2px solid #ffffff;
+
+    &--green {
+      border-bottom: 2px solid $button-color;
+    }
   }
 }
